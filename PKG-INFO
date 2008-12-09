@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: ZenTrayIcon
+Version: 0.2
+Summary: Systray status monitor for Zenoss
+Home-page: http://www.zenoss.com
+Author: Todd Davis <tdavis@anpisolutions.com> (initial version); Eric Wallace <e@ewall.org> (version 0.2 edits)
+Author-email: todd@davisnetonline.com; e@ewall.org
+License: GPL
+Description: 
+ZenTray is a system tray gadget that watches and displays the current alert level/severity from a Zenoss monitoring server.
+
+Clicking the icon will launch Zenoss in the default web browser. Right-clicking the icon will allow you to edit your server connection settings.
+
+New in version 0.2: The program will authenticate to the Zenoss (Zope) server using a form and cookies, which is the default login method.
+
+Platform: UNKNOWN

@@ -1,0 +1,6 @@
+recursive-include zentrayicon *.ico *.glade
+include MANIFEST.in
+include COPYRIGHT
+include copygtk.cmd
+include ZenTrayIcon.nsi
+include rpm.cfg

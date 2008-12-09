@@ -1,0 +1,21 @@
+Summary: ZenTray monitor for Zenoss
+
+Authors:
+	Todd Davis <tdavis@anpisolutions.com> (initial version)
+	Eric Wallace <e@ewall.org> (version 0.2 edits)
+
+License:
+	GPLv2
+
+Description: 
+
+	ZenTray is a system tray gadget that watches and displays the current alert level/severity from a Zenoss monitoring server.
+
+	Clicking the icon will launch Zenoss in the default web browser. Right-clicking the icon will allow you to edit your server connection settings.
+
+	New in version 0.2: The program will authenticate to the Zenoss (Zope) server using a form and cookies, which is the default login method.
+
+Platform:
+	Windows, and more?
+
+	I have only tested on Windows XP Pro SP3, but since this is created with PyGTK, it is probably compatible with other systems. YMMV.
