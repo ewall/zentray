@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="6.7" version="6.7" modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="Eric Wallace &lt;e@ewall.org&gt;"/>
+    <ROW Property="ARPHELPLINK" Value="http://www.ewall.org/"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://github.com/ewall/zentray/"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp" Type="1"/>
+    <ROW Property="LIMITUI" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="Zenoss Community" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{560E9BF9-0AD4-4812-908A-DB02ED006E4D} "/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="ZenTray" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="0.2.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{E47B5122-A55D-41F7-B047-6085D02C096D}"/>
+    <ROW Property="WindowsFamily9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Default_DIR" Directory_Parent="themes_DIR" DefaultDir="Default"/>
+    <ROW Directory="Emacs_DIR" Directory_Parent="themes_DIR" DefaultDir="Emacs"/>
+    <ROW Directory="MS_Windows_DIR" Directory_Parent="themes_DIR" DefaultDir="MS-Win~1|MS-Windows"/>
+    <ROW Directory="Metal_DIR" Directory_Parent="themes_DIR" DefaultDir="Metal"/>
+    <ROW Directory="Raleigh_DIR" Directory_Parent="themes_DIR" DefaultDir="Raleigh"/>
+    <ROW Directory="Redmond95_DIR" Directory_Parent="themes_DIR" DefaultDir="Redmon~1|Redmond95"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="Startu~1|StartupFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="__1_DIR" Directory_Parent="gtk_2.0_1_DIR" DefaultDir="24~1.0|2.4.0"/>
+    <ROW Directory="__2_DIR" Directory_Parent="pango_1_DIR" DefaultDir="16~1.0|1.6.0"/>
+    <ROW Directory="__DIR" Directory_Parent="gtk_2.0_1_DIR" DefaultDir="210~1.0|2.10.0"/>
+    <ROW Directory="cairo_DIR" Directory_Parent="APPDIR" DefaultDir="cairo"/>
+    <ROW Directory="conf.avail_DIR" Directory_Parent="fonts_DIR" DefaultDir="conf~1.ava|conf.avail"/>
+    <ROW Directory="conf.d_DIR" Directory_Parent="fonts_DIR" DefaultDir="conf.d"/>
+    <ROW Directory="demo_DIR" Directory_Parent="gtk_2.0_2_DIR" DefaultDir="demo"/>
+    <ROW Directory="doc_DIR" Directory_Parent="share_DIR" DefaultDir="doc"/>
+    <ROW Directory="email_DIR" Directory_Parent="APPDIR" DefaultDir="email"/>
+    <ROW Directory="encodings_DIR" Directory_Parent="APPDIR" DefaultDir="encodi~1|encodings"/>
+    <ROW Directory="engines_1_DIR" Directory_Parent="__1_DIR" DefaultDir="engines"/>
+    <ROW Directory="engines_DIR" Directory_Parent="__DIR" DefaultDir="engines"/>
+    <ROW Directory="etc_DIR" Directory_Parent="APPDIR" DefaultDir="etc"/>
+    <ROW Directory="fonts_DIR" Directory_Parent="etc_DIR" DefaultDir="fonts"/>
+    <ROW Directory="gobject_DIR" Directory_Parent="APPDIR" DefaultDir="gobject"/>
+    <ROW Directory="gtk_2.0_1_DIR" Directory_Parent="lib_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_2_DIR" Directory_Parent="share_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_3_DIR" Directory_Parent="Metal_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_4_DIR" Directory_Parent="MS_Windows_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_5_DIR" Directory_Parent="Raleigh_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_6_DIR" Directory_Parent="Redmond95_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_DIR" Directory_Parent="etc_DIR" DefaultDir="gtk-2.0"/>
+    <ROW Directory="gtk_2.0_key_1_DIR" Directory_Parent="Emacs_DIR" DefaultDir="gtk-2~1.0-k|gtk-2.0-key"/>
+    <ROW Directory="gtk_2.0_key_DIR" Directory_Parent="Default_DIR" DefaultDir="gtk-2~1.0-k|gtk-2.0-key"/>
+    <ROW Directory="gtk_DIR" Directory_Parent="APPDIR" DefaultDir="gtk"/>
+    <ROW Directory="gtkthemeselector_DIR" Directory_Parent="share_DIR" DefaultDir="gtkthe~1|gtkthemeselector"/>
+    <ROW Directory="immodules_DIR" Directory_Parent="__DIR" DefaultDir="immodu~1|immodules"/>
+    <ROW Directory="lib_DIR" Directory_Parent="APPDIR" DefaultDir="lib"/>
+    <ROW Directory="libglade_DIR" Directory_Parent="xml_DIR" DefaultDir="libglade"/>
+    <ROW Directory="loaders_DIR" Directory_Parent="__DIR" DefaultDir="loaders"/>
+    <ROW Directory="logging_DIR" Directory_Parent="APPDIR" DefaultDir="logging"/>
+    <ROW Directory="man1_DIR" Directory_Parent="man_DIR" DefaultDir="man1"/>
+    <ROW Directory="man_DIR" Directory_Parent="share_DIR" DefaultDir="man"/>
+    <ROW Directory="mime_DIR" Directory_Parent="email_DIR" DefaultDir="mime"/>
+    <ROW Directory="modules_DIR" Directory_Parent="__2_DIR" DefaultDir="modules"/>
+    <ROW Directory="pango_1_DIR" Directory_Parent="lib_DIR" DefaultDir="pango"/>
+    <ROW Directory="pango_DIR" Directory_Parent="etc_DIR" DefaultDir="pango"/>
+    <ROW Directory="pixmaps_1_DIR" Directory_Parent="zentrayicon_1_DIR" DefaultDir="pixmaps"/>
+    <ROW Directory="pixmaps_DIR" Directory_Parent="gtkthemeselector_DIR" DefaultDir="pixmaps"/>
+    <ROW Directory="share_DIR" Directory_Parent="APPDIR" DefaultDir="share"/>
+    <ROW Directory="themes_DIR" Directory_Parent="share_DIR" DefaultDir="themes"/>
+    <ROW Directory="xml_DIR" Directory_Parent="share_DIR" DefaultDir="xml"/>
+    <ROW Directory="zentrayicon_1_DIR" Directory_Parent="APPDIR" DefaultDir="zentra~1|zentrayicon"/>
+    <ROW Directory="zentrayicon_DIR" Directory_Parent="doc_DIR" DefaultDir="zentra~1|zentrayicon"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="COPYRIGHT" ComponentId="{5802800E-5BE8-4432-9E86-FB430234CC8F}" Directory_="zentrayicon_DIR" Attributes="0" KeyPath="COPYRIGHT" Type="0"/>
+    <ROW Component="README.html" ComponentId="{31083020-F3DF-4328-A5E8-A1E38830C01D}" Directory_="Metal_DIR" Attributes="0" KeyPath="README.html" Type="0"/>
+    <ROW Component="README.html_1" ComponentId="{81DF7572-3F92-44AE-95C5-A8D3E265B3CE}" Directory_="Redmond95_DIR" Attributes="0" KeyPath="README.html_1" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{850EC68D-9C0C-4E15-A054-6EDFB3927303}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="aliases.pyc" ComponentId="{FADC2C2C-3C82-4BB5-824F-98538F4595FD}" Directory_="encodings_DIR" Attributes="0" KeyPath="aliases.pyc" Type="0"/>
+    <ROW Component="alphatest.png" ComponentId="{0CFC0525-D4A4-4ADF-8E35-B9AA3EF8CC0D}" Directory_="demo_DIR" Attributes="0" KeyPath="alphatest.png" Type="0"/>
+    <ROW Component="atexit.pyc" ComponentId="{64EB6DBB-53B7-464E-AE1E-2156DC1CD67B}" Directory_="APPDIR" Attributes="0" KeyPath="atexit.pyc" Type="0"/>
+    <ROW Component="autohint.conf" ComponentId="{881CC7F5-F95A-4245-9588-F87837201367}" Directory_="conf.avail_DIR" Attributes="0" KeyPath="autohint.conf" Type="0"/>
+    <ROW Component="base64mime.pyc" ComponentId="{4BCE900F-AB9B-4A1D-8C44-2A0AC74BAAEF}" Directory_="email_DIR" Attributes="0" KeyPath="base64mime.pyc" Type="0"/>
+    <ROW Component="cairo.pyc" ComponentId="{DABF3E5E-A91D-435B-BAC2-9DF8D5868C08}" Directory_="cairo_DIR" Attributes="0" KeyPath="cairo.pyc" Type="0"/>
+    <ROW Component="charset.alias" ComponentId="{A74E61E8-FC31-4AD4-99D8-641A5BDF4746}" Directory_="lib_DIR" Attributes="0" KeyPath="charset.alias" Type="0"/>
+    <ROW Component="config.pyc" ComponentId="{68A67AB6-F67C-4C87-BBDD-6941636FC5F3}" Directory_="zentrayicon_1_DIR" Attributes="0" KeyPath="config.pyc" Type="0"/>
+    <ROW Component="constants.pyc" ComponentId="{97BC1725-336B-4C02-8774-40F6FC8CE4CB}" Directory_="gobject_DIR" Attributes="0" KeyPath="constants.pyc" Type="0"/>
+    <ROW Component="deprecation.pyc" ComponentId="{34620C89-F256-4F42-A1B6-59036FD27CCE}" Directory_="gtk_DIR" Attributes="0" KeyPath="deprecation.pyc" Type="0"/>
+    <ROW Component="fix_globaladvance.conf" ComponentId="{A549E4BA-029E-452A-8090-73320CBC007D}" Directory_="conf.d_DIR" Attributes="0" KeyPath="fix_globaladvance.conf_1" Type="0"/>
+    <ROW Component="fonts.conf" ComponentId="{D592BA90-A404-47B0-904C-029FADCC7988}" Directory_="fonts_DIR" Attributes="0" KeyPath="fonts.conf" Type="0"/>
+    <ROW Component="gdk_pixbuf.loaders" ComponentId="{D34E5B7E-E5D1-4C9C-9E1F-C1038664E6FE}" Directory_="gtk_2.0_DIR" Attributes="0" KeyPath="gdk_pixbuf.loaders" Type="0"/>
+    <ROW Component="gdk_pixbuf_query_loaders.1" ComponentId="{95675929-7C66-4BB0-8BFE-9049101D89E9}" Directory_="man1_DIR" Attributes="0" KeyPath="gdk_pixbuf_query_loaders.1" Type="0"/>
+    <ROW Component="glade_2.0.dtd" ComponentId="{EB5B69D6-FBC8-4278-AF27-8A411B826F96}" Directory_="libglade_DIR" Attributes="0" KeyPath="glade_2.0.dtd" Type="0"/>
+    <ROW Component="gtkrc" ComponentId="{CAF210E2-8753-4E21-B6D7-76CD39CEDF18}" Directory_="gtk_2.0_key_DIR" Attributes="0" KeyPath="gtkrc_1" Type="0"/>
+    <ROW Component="gtkrc_1" ComponentId="{4D38306F-F440-498A-9BF9-0B7D0F35EA84}" Directory_="gtk_2.0_key_1_DIR" Attributes="0" KeyPath="gtkrc_2" Type="0"/>
+    <ROW Component="gtkrc_2" ComponentId="{64191A27-AEE4-415F-BE01-4FABCD7A7A45}" Directory_="gtk_2.0_3_DIR" Attributes="0" KeyPath="gtkrc_3" Type="0"/>
+    <ROW Component="gtkrc_3" ComponentId="{595E91B8-BFA9-4382-BB48-E71C272C76E3}" Directory_="gtk_2.0_4_DIR" Attributes="0" KeyPath="gtkrc_4" Type="0"/>
+    <ROW Component="gtkrc_4" ComponentId="{02DC0A1D-DAF1-4066-893E-DFC89E037A02}" Directory_="gtk_2.0_5_DIR" Attributes="0" KeyPath="gtkrc_5" Type="0"/>
+    <ROW Component="gtkrc_5" ComponentId="{35A251C8-26ED-45E8-9D1D-3104FBD7B10C}" Directory_="gtk_2.0_6_DIR" Attributes="0" KeyPath="gtkrc_6" Type="0"/>
+    <ROW Component="gts.png" ComponentId="{DA09B952-E505-4D01-BDAA-C0E1EAB41879}" Directory_="pixmaps_DIR" Attributes="0" KeyPath="gts.png" Type="0"/>
+    <ROW Component="iconv.dll" ComponentId="{A1063E12-C791-4C6A-8622-4607E39E3217}" Directory_="APPDIR" Attributes="0" KeyPath="iconv.dll"/>
+    <ROW Component="im_am_et.dll" ComponentId="{6F40A8D2-556D-4CA2-80AE-C18A84ADAD84}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_am_et.dll"/>
+    <ROW Component="im_cedilla.dll" ComponentId="{F0D1C543-935B-4549-A655-175996018352}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_cedilla.dll"/>
+    <ROW Component="im_cyrillic_translit.dll" ComponentId="{1EB4FBAB-C41E-4985-BEAF-7D04CE52836D}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_cyrillic_translit.dll"/>
+    <ROW Component="im_ime.dll" ComponentId="{168C3C4E-4866-4724-B9C3-A34DEAD3FCEC}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_ime.dll"/>
+    <ROW Component="im_inuktitut.dll" ComponentId="{6003FCE7-AA82-4490-9AE6-8FC29F0B9487}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_inuktitut.dll"/>
+    <ROW Component="im_ipa.dll" ComponentId="{D24404DE-B22B-4342-A183-01CC16DBBE4C}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_ipa.dll"/>
+    <ROW Component="im_multipress.dll" ComponentId="{3C599B25-CF6D-4165-828B-DB763BB342A6}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_multipress.dll"/>
+    <ROW Component="im_thai.dll" ComponentId="{C8817F3D-0BBF-4817-8BEC-4E85FC29C3C5}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_thai.dll"/>
+    <ROW Component="im_ti_er.dll" ComponentId="{EF359B47-990F-4467-8625-DCC84A567A61}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_ti_er.dll"/>
+    <ROW Component="im_ti_et.dll" ComponentId="{8850BDD6-EF03-47E9-8368-1E3DE995EE30}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_ti_et.dll"/>
+    <ROW Component="im_viqr.dll" ComponentId="{506C8F85-E35B-4EE4-9735-2F12A8747E7D}" Directory_="immodules_DIR" Attributes="0" KeyPath="im_viqr.dll"/>
+    <ROW Component="init_.pyc" ComponentId="{662A68BB-AE6C-422C-8E4E-7409C82AEF11}" Directory_="mime_DIR" Attributes="0" KeyPath="init_.pyc_1" Type="0"/>
+    <ROW Component="init_.pyc_1" ComponentId="{155913D9-145A-42CB-91A3-3D79E621D688}" Directory_="logging_DIR" Attributes="0" KeyPath="init_.pyc_6" Type="0"/>
+    <ROW Component="intl.dll" ComponentId="{E962CDA1-9FC5-4194-9F60-3F7C703E416A}" Directory_="APPDIR" Attributes="0" KeyPath="intl.dll"/>
+    <ROW Component="libatk_1.0_0.dll" ComponentId="{B3C66401-429C-4609-BCAB-737DA1FC324D}" Directory_="APPDIR" Attributes="0" KeyPath="libatk_1.0_0.dll"/>
+    <ROW Component="libcairo_2.dll" ComponentId="{5066BA5E-82B7-43DA-89E3-21EA452D981A}" Directory_="APPDIR" Attributes="0" KeyPath="libcairo_2.dll"/>
+    <ROW Component="libfontconfig_1.dll" ComponentId="{CE75FC25-81B4-4178-A0E5-BDDD1B74EC0D}" Directory_="APPDIR" Attributes="0" KeyPath="libfontconfig_1.dll"/>
+    <ROW Component="libfreetype_6.dll" ComponentId="{EF692688-9E7C-49FD-84DB-C0034F8387C7}" Directory_="APPDIR" Attributes="0" KeyPath="libfreetype_6.dll"/>
+    <ROW Component="libgdk_pixbuf_2.0_0.dll" ComponentId="{FA5D67A9-2E18-4B15-9F63-2D0B68A3C3CB}" Directory_="APPDIR" Attributes="0" KeyPath="libgdk_pixbuf_2.0_0.dll"/>
+    <ROW Component="libgdk_win32_2.0_0.dll" ComponentId="{D6288907-FA88-40C7-884D-399A60D54FB0}" Directory_="APPDIR" Attributes="0" KeyPath="libgdk_win32_2.0_0.dll"/>
+    <ROW Component="libglade_2.0_0.dll" ComponentId="{7C899E66-6EE0-4C91-A14F-01CBBC11E29F}" Directory_="APPDIR" Attributes="0" KeyPath="libglade_2.0_0.dll"/>
+    <ROW Component="libglib_2.0_0.dll" ComponentId="{0AB32554-FD11-4976-9A1A-01536EA8AEF4}" Directory_="APPDIR" Attributes="0" KeyPath="libglib_2.0_0.dll"/>
+    <ROW Component="libgmodule_2.0_0.dll" ComponentId="{C6DBFDD5-EC25-42A1-A467-B9414B19ED85}" Directory_="APPDIR" Attributes="0" KeyPath="libgmodule_2.0_0.dll"/>
+    <ROW Component="libgobject_2.0_0.dll" ComponentId="{16B95128-DEE1-4309-89AE-E997988DFE96}" Directory_="APPDIR" Attributes="0" KeyPath="libgobject_2.0_0.dll"/>
+    <ROW Component="libgthread_2.0_0.dll" ComponentId="{C4B3FADF-9D40-499E-B303-347E516A9CA3}" Directory_="APPDIR" Attributes="0" KeyPath="libgthread_2.0_0.dll"/>
+    <ROW Component="libgtk_win32_2.0_0.dll" ComponentId="{7FD5E81C-AC76-4905-AB4E-76596C830B5F}" Directory_="APPDIR" Attributes="0" KeyPath="libgtk_win32_2.0_0.dll"/>
+    <ROW Component="libmetal.dll" ComponentId="{AF54F419-82F3-44C8-8523-381E2F7053FA}" Directory_="engines_1_DIR" Attributes="0" KeyPath="libmetal.dll"/>
+    <ROW Component="libpango_1.0_0.dll" ComponentId="{3350F015-BDEE-4195-B727-2DF76BD5BE3A}" Directory_="APPDIR" Attributes="0" KeyPath="libpango_1.0_0.dll"/>
+    <ROW Component="libpangocairo_1.0_0.dll" ComponentId="{FDE87120-ACCC-40B4-A018-020B731F84A7}" Directory_="APPDIR" Attributes="0" KeyPath="libpangocairo_1.0_0.dll"/>
+    <ROW Component="libpangoft2_1.0_0.dll" ComponentId="{679795E9-7B7F-441B-83DB-53DDCFC9059D}" Directory_="APPDIR" Attributes="0" KeyPath="libpangoft2_1.0_0.dll"/>
+    <ROW Component="libpangowin32_1.0_0.dll" ComponentId="{0D851C7D-487D-4AE9-9BCD-98A8493D589E}" Directory_="APPDIR" Attributes="0" KeyPath="libpangowin32_1.0_0.dll"/>
+    <ROW Component="libpixbufloader_ani.dll" ComponentId="{41BBAF88-7771-48E4-804B-9B6132F1476C}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_ani.dll"/>
+    <ROW Component="libpixbufloader_bmp.dll" ComponentId="{C7EF2609-DBD4-4ECF-8687-535D4461A374}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_bmp.dll"/>
+    <ROW Component="libpixbufloader_gif.dll" ComponentId="{F0F214DB-95BA-4018-9FCE-1F3BE2E11BF4}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_gif.dll"/>
+    <ROW Component="libpixbufloader_ico.dll" ComponentId="{1BC95A13-3414-4150-8C15-D8B7B01FFEFF}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_ico.dll"/>
+    <ROW Component="libpixbufloader_jpeg.dll" ComponentId="{7697061B-8488-4DBF-9E49-8355E279EFE3}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_jpeg.dll"/>
+    <ROW Component="libpixbufloader_pcx.dll" ComponentId="{42517F1C-34C7-43B2-B905-C58797197532}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_pcx.dll"/>
+    <ROW Component="libpixbufloader_png.dll" ComponentId="{DACD0FC6-C4BC-4650-BD53-FA995F3E775C}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_png.dll"/>
+    <ROW Component="libpixbufloader_pnm.dll" ComponentId="{6003FBA8-D1C3-4329-A222-7C3CF0021E94}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_pnm.dll"/>
+    <ROW Component="libpixbufloader_ras.dll" ComponentId="{8504933E-5440-44FC-BE9A-D887B0AB6100}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_ras.dll"/>
+    <ROW Component="libpixbufloader_tga.dll" ComponentId="{DDD31411-956B-4B36-BA98-EB98556FA0D8}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_tga.dll"/>
+    <ROW Component="libpixbufloader_tiff.dll" ComponentId="{C0E15A23-D68E-4D88-9E93-4FE456F33F96}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_tiff.dll"/>
+    <ROW Component="libpixbufloader_wbmp.dll" ComponentId="{04BC6F9F-CBA6-4287-A57C-7F77481C0BB1}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_wbmp.dll"/>
+    <ROW Component="libpixbufloader_xbm.dll" ComponentId="{12068263-C8E3-4562-8D45-2744957AF16D}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_xbm.dll"/>
+    <ROW Component="libpixbufloader_xpm.dll" ComponentId="{5A4621C5-975B-47F6-B6BA-0873A284414D}" Directory_="loaders_DIR" Attributes="0" KeyPath="libpixbufloader_xpm.dll"/>
+    <ROW Component="libpixmap.dll" ComponentId="{7E76B998-6365-456F-A992-48F5065B7E47}" Directory_="engines_DIR" Attributes="0" KeyPath="libpixmap.dll"/>
+    <ROW Component="libpng12.dll" ComponentId="{9E6965B1-D198-4CA6-9EE0-B3515D428D2A}" Directory_="APPDIR" Attributes="0" KeyPath="libpng12.dll"/>
+    <ROW Component="libredmond95.dll" ComponentId="{5D09163E-1032-4272-BAE3-00444998DD0D}" Directory_="engines_1_DIR" Attributes="0" KeyPath="libredmond95.dll"/>
+    <ROW Component="libsvg.dll" ComponentId="{07E322EC-9925-4880-9A7A-B791E9621FD2}" Directory_="engines_DIR" Attributes="0" KeyPath="libsvg.dll"/>
+    <ROW Component="libwimp.dll" ComponentId="{9ABF621B-55AD-4A80-8027-581BAE08D889}" Directory_="engines_DIR" Attributes="0" KeyPath="libwimp.dll"/>
+    <ROW Component="libxml2.dll" ComponentId="{58B52BCA-3792-4D6A-8DF7-3279A2E48CA2}" Directory_="APPDIR" Attributes="0" KeyPath="libxml2.dll"/>
+    <ROW Component="msvcr71.dll" ComponentId="{205EF176-40FA-452D-80E9-9EDCFAF4F594}" Directory_="APPDIR" Attributes="0" KeyPath="msvcr71.dll"/>
+    <ROW Component="pango.aliases" ComponentId="{2DB15280-AC5C-47F0-A576-C529350D78AD}" Directory_="pango_DIR" Attributes="0" KeyPath="pango.aliases" Type="0"/>
+    <ROW Component="pango_arabic_fc.dll" ComponentId="{8D3F89C9-B1DA-4274-AFAD-A22015E1C423}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_arabic_fc.dll"/>
+    <ROW Component="pango_arabic_lang.dll" ComponentId="{36ABEA90-02B6-43AD-BF2F-6BF7491CFDF9}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_arabic_lang.dll"/>
+    <ROW Component="pango_basic_fc.dll" ComponentId="{1CF28D62-1975-4CE7-9BC1-D4B3E7381711}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_basic_fc.dll"/>
+    <ROW Component="pango_basic_win32.dll" ComponentId="{BA6E3D0D-C31C-4FD2-9667-257613C24715}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_basic_win32.dll"/>
+    <ROW Component="pango_hangul_fc.dll" ComponentId="{F0DFE68F-3728-400D-9FD9-B3F7DBC164AB}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_hangul_fc.dll"/>
+    <ROW Component="pango_hebrew_fc.dll" ComponentId="{3B0951C5-8CB0-4592-AF2A-CC9B8750E5FD}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_hebrew_fc.dll"/>
+    <ROW Component="pango_indic_fc.dll" ComponentId="{C30CCA8E-56B4-47D7-B1A3-AE46E91B5F2D}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_indic_fc.dll"/>
+    <ROW Component="pango_indic_lang.dll" ComponentId="{FF6CA022-6758-4BEE-9B87-206F1972E72F}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_indic_lang.dll"/>
+    <ROW Component="pango_khmer_fc.dll" ComponentId="{0BF4700C-5F4C-4603-88AD-991D74A10841}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_khmer_fc.dll"/>
+    <ROW Component="pango_syriac_fc.dll" ComponentId="{D11F4E35-6319-4F77-A8DB-684219BF5DCC}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_syriac_fc.dll"/>
+    <ROW Component="pango_thai_fc.dll" ComponentId="{B010B241-94C1-4E97-8045-19E91CC831C4}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_thai_fc.dll"/>
+    <ROW Component="pango_tibetan_fc.dll" ComponentId="{C6DEA9A0-A6D7-43A4-A11C-ECDEC27AB330}" Directory_="modules_DIR" Attributes="0" KeyPath="pango_tibetan_fc.dll"/>
+    <ROW Component="python25.dll" ComponentId="{C7667787-BFC6-467B-A7B0-113DB2B82AC2}" Directory_="APPDIR" Attributes="0" KeyPath="python25.dll"/>
+    <ROW Component="svg_loader.dll" ComponentId="{3DDAAB5F-A3D0-4FE8-8A34-374DC32EDC4B}" Directory_="loaders_DIR" Attributes="0" KeyPath="svg_loader.dll"/>
+    <ROW Component="w9xpopen.exe" ComponentId="{E282BA5E-75E9-4EAD-AA4A-DBBE8E249992}" Directory_="APPDIR" Attributes="0" KeyPath="w9xpopen.exe"/>
+    <ROW Component="zenoss_blue.ico" ComponentId="{2718926B-DB67-4DD9-8664-837EFCA4E94D}" Directory_="pixmaps_1_DIR" Attributes="0" KeyPath="zenoss_blue.ico" Type="0"/>
+    <ROW Component="zentray.exe" ComponentId="{44B27792-3961-4CF7-8385-2035F276DDD4}" Directory_="APPDIR" Attributes="0" KeyPath="zentray.exe"/>
+    <ROW Component="zlib1.dll" ComponentId="{B379D488-009B-46DF-8656-B9CEEA5452E2}" Directory_="APPDIR" Attributes="0" KeyPath="zlib1.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="atexit.pyc cairo.pyc base64mime.pyc init_.pyc aliases.pyc autohint.conf fix_globaladvance.conf fonts.conf gdk_pixbuf.loaders pango.aliases constants.pyc deprecation.pyc iconv.dll intl.dll charset.alias libpixmap.dll libsvg.dll libwimp.dll im_am_et.dll im_cedilla.dll im_cyrillic_translit.dll im_ime.dll im_inuktitut.dll im_ipa.dll im_multipress.dll im_thai.dll im_ti_er.dll im_ti_et.dll im_viqr.dll libpixbufloader_ani.dll libpixbufloader_bmp.dll libpixbufloader_gif.dll libpixbufloader_ico.dll libpixbufloader_jpeg.dll libpixbufloader_pcx.dll libpixbufloader_png.dll libpixbufloader_pnm.dll libpixbufloader_ras.dll libpixbufloader_tga.dll libpixbufloader_tiff.dll libpixbufloader_wbmp.dll libpixbufloader_xbm.dll libpixbufloader_xpm.dll svg_loader.dll libmetal.dll libredmond95.dll pango_arabic_fc.dll pango_arabic_lang.dll pango_basic_fc.dll pango_basic_win32.dll pango_hangul_fc.dll pango_hebrew_fc.dll pango_indic_fc.dll pango_indic_lang.dll pango_khmer_fc.dll pango_syriac_fc.dll pango_thai_fc.dll pango_tibetan_fc.dll libatk_1.0_0.dll libcairo_2.dll libfontconfig_1.dll libfreetype_6.dll libgdk_win32_2.0_0.dll libgdk_pixbuf_2.0_0.dll libglade_2.0_0.dll libglib_2.0_0.dll libgmodule_2.0_0.dll libgobject_2.0_0.dll libgthread_2.0_0.dll libgtk_win32_2.0_0.dll libpango_1.0_0.dll libpangocairo_1.0_0.dll libpangoft2_1.0_0.dll libpangowin32_1.0_0.dll libpng12.dll libxml2.dll init_.pyc_1 msvcr71.dll python25.dll COPYRIGHT alphatest.png gts.png gdk_pixbuf_query_loaders.1 gtkrc gtkrc_1 gtkrc_2 README.html gtkrc_3 gtkrc_4 gtkrc_5 README.html_1 glade_2.0.dtd w9xpopen.exe zentray.exe config.pyc zenoss_blue.ico zlib1.dll SHORTCUTDIR"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="COPYRIGHT" Component_="COPYRIGHT" FileName="COPYRI~1|COPYRIGHT" Attributes="0" SourcePath="dist\py2exe\share\doc\zentrayicon\COPYRIGHT" SelfReg="false" Sequence="319"/>
+    <ROW File="ConfigParser.pyc" Component_="atexit.pyc" FileName="Config~1.pyc|ConfigParser.pyc" Attributes="0" SourcePath="dist\py2exe\ConfigParser.pyc" SelfReg="false" Sequence="15"/>
+    <ROW File="LWPCookieJar.pyc" Component_="atexit.pyc" FileName="_LWPCo~1.pyc|_LWPCookieJar.pyc" Attributes="0" SourcePath="dist\py2exe\_LWPCookieJar.pyc" SelfReg="false" Sequence="424"/>
+    <ROW File="MozillaCookieJar.pyc" Component_="atexit.pyc" FileName="_Mozil~1.pyc|_MozillaCookieJar.pyc" Attributes="0" SourcePath="dist\py2exe\_MozillaCookieJar.pyc" SelfReg="false" Sequence="425"/>
+    <ROW File="README" Component_="autohint.conf" FileName="README" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\README" SelfReg="false" Sequence="175"/>
+    <ROW File="README.html" Component_="README.html" FileName="README~1.htm|README.html" Attributes="0" SourcePath="dist\py2exe\share\themes\Metal\README.html" SelfReg="false" Sequence="372"/>
+    <ROW File="README.html_1" Component_="README.html_1" FileName="README~1.htm|README.html" Attributes="0" SourcePath="dist\py2exe\share\themes\Redmond95\README.html" SelfReg="false" Sequence="376"/>
+    <ROW File="StringIO.pyc" Component_="atexit.pyc" FileName="StringIO.pyc" Attributes="0" SourcePath="dist\py2exe\StringIO.pyc" SelfReg="false" Sequence="386"/>
+    <ROW File="UserDict.pyc" Component_="atexit.pyc" FileName="UserDict.pyc" Attributes="0" SourcePath="dist\py2exe\UserDict.pyc" SelfReg="false" Sequence="404"/>
+    <ROW File="ZenTrayIcon.pyc" Component_="config.pyc" FileName="ZenTra~1.pyc|ZenTrayIcon.pyc" Attributes="0" SourcePath="dist\py2exe\zentrayicon\ZenTrayIcon.pyc" SelfReg="false" Sequence="419"/>
+    <ROW File="aliases.pyc" Component_="aliases.pyc" FileName="aliases.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\aliases.pyc" SelfReg="false" Sequence="36"/>
+    <ROW File="alphatest.png" Component_="alphatest.png" FileName="alphat~1.png|alphatest.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\alphatest.png" SelfReg="false" Sequence="320"/>
+    <ROW File="amt_aliases.conf" Component_="autohint.conf" FileName="30-amt~1.con|30-amt-aliases.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\30-amt-aliases.conf" SelfReg="false" Sequence="161"/>
+    <ROW File="amt_aliases.conf_1" Component_="fix_globaladvance.conf" FileName="30-amt~1.con|30-amt-aliases.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\30-amt-aliases.conf" SelfReg="false" Sequence="179"/>
+    <ROW File="apple_red.png" Component_="alphatest.png" FileName="apple-~1.png|apple-red.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\apple-red.png" SelfReg="false" Sequence="321"/>
+    <ROW File="appwindow.c" Component_="alphatest.png" FileName="appwin~1.c|appwindow.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\appwindow.c" SelfReg="false" Sequence="322"/>
+    <ROW File="ascii.pyc" Component_="aliases.pyc" FileName="ascii.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\ascii.pyc" SelfReg="false" Sequence="37"/>
+    <ROW File="assistant.c" Component_="alphatest.png" FileName="assist~1.c|assistant.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\assistant.c" SelfReg="false" Sequence="323"/>
+    <ROW File="atexit.pyc" Component_="atexit.pyc" FileName="atexit.pyc" Attributes="0" SourcePath="dist\py2exe\atexit.pyc" SelfReg="false" Sequence="1"/>
+    <ROW File="atk.pyc" Component_="atexit.pyc" FileName="atk.pyc" Attributes="0" SourcePath="dist\py2exe\atk.pyc" SelfReg="false" Sequence="2"/>
+    <ROW File="atk.pyd" Component_="atexit.pyc" FileName="atk.pyd" Attributes="0" SourcePath="dist\py2exe\atk.pyd" SelfReg="false" Sequence="3"/>
+    <ROW File="autohint.conf" Component_="autohint.conf" FileName="10-aut~1.con|10-autohint.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-autohint.conf" SelfReg="false" Sequence="151"/>
+    <ROW File="background.jpg" Component_="alphatest.png" FileName="backgr~1.jpg|background.jpg" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\background.jpg" SelfReg="false" Sequence="324"/>
+    <ROW File="base64.pyc" Component_="atexit.pyc" FileName="base64.pyc" Attributes="0" SourcePath="dist\py2exe\base64.pyc" SelfReg="false" Sequence="4"/>
+    <ROW File="base64_codec.pyc" Component_="aliases.pyc" FileName="base64~1.pyc|base64_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\base64_codec.pyc" SelfReg="false" Sequence="38"/>
+    <ROW File="base64mime.pyc" Component_="base64mime.pyc" FileName="base64~1.pyc|base64mime.pyc" Attributes="0" SourcePath="dist\py2exe\email\base64mime.pyc" SelfReg="false" Sequence="24"/>
+    <ROW File="bdb.pyc" Component_="atexit.pyc" FileName="bdb.pyc" Attributes="0" SourcePath="dist\py2exe\bdb.pyc" SelfReg="false" Sequence="5"/>
+    <ROW File="big5.pyc" Component_="aliases.pyc" FileName="big5.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\big5.pyc" SelfReg="false" Sequence="39"/>
+    <ROW File="big5hkscs.pyc" Component_="aliases.pyc" FileName="big5hk~1.pyc|big5hkscs.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\big5hkscs.pyc" SelfReg="false" Sequence="40"/>
+    <ROW File="bisect.pyc" Component_="atexit.pyc" FileName="bisect.pyc" Attributes="0" SourcePath="dist\py2exe\bisect.pyc" SelfReg="false" Sequence="6"/>
+    <ROW File="builder.c" Component_="alphatest.png" FileName="builder.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\builder.c" SelfReg="false" Sequence="325"/>
+    <ROW File="button_box.c" Component_="alphatest.png" FileName="button~1.c|button_box.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\button_box.c" SelfReg="false" Sequence="326"/>
+    <ROW File="bz2.pyc" Component_="atexit.pyc" FileName="bz2.pyc" Attributes="0" SourcePath="dist\py2exe\bz2.pyc" SelfReg="false" Sequence="7"/>
+    <ROW File="bz2.pyd" Component_="atexit.pyc" FileName="bz2.pyd" Attributes="0" SourcePath="dist\py2exe\bz2.pyd" SelfReg="false" Sequence="8"/>
+    <ROW File="bz2_codec.pyc" Component_="aliases.pyc" FileName="bz2_co~1.pyc|bz2_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\bz2_codec.pyc" SelfReg="false" Sequence="41"/>
+    <ROW File="cairo._cairo.pyd" Component_="atexit.pyc" FileName="cairo_~1.pyd|cairo._cairo.pyd" Attributes="0" SourcePath="dist\py2exe\cairo._cairo.pyd" SelfReg="false" Sequence="11"/>
+    <ROW File="cairo.pyc" Component_="cairo.pyc" FileName="_cairo.pyc" Attributes="0" SourcePath="dist\py2exe\cairo\_cairo.pyc" SelfReg="false" Sequence="9"/>
+    <ROW File="calendar.pyc" Component_="atexit.pyc" FileName="calendar.pyc" Attributes="0" SourcePath="dist\py2exe\calendar.pyc" SelfReg="false" Sequence="12"/>
+    <ROW File="changedisplay.c" Component_="alphatest.png" FileName="change~1.c|changedisplay.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\changedisplay.c" SelfReg="false" Sequence="327"/>
+    <ROW File="charmap.pyc" Component_="aliases.pyc" FileName="charmap.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\charmap.pyc" SelfReg="false" Sequence="42"/>
+    <ROW File="charset.alias" Component_="charset.alias" FileName="charse~1.ali|charset.alias" Attributes="0" SourcePath="dist\py2exe\lib\charset.alias" SelfReg="false" Sequence="224"/>
+    <ROW File="charset.pyc" Component_="base64mime.pyc" FileName="charset.pyc" Attributes="0" SourcePath="dist\py2exe\email\charset.pyc" SelfReg="false" Sequence="25"/>
+    <ROW File="clipboard.c" Component_="alphatest.png" FileName="clipbo~1.c|clipboard.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\clipboard.c" SelfReg="false" Sequence="328"/>
+    <ROW File="cmd.pyc" Component_="atexit.pyc" FileName="cmd.pyc" Attributes="0" SourcePath="dist\py2exe\cmd.pyc" SelfReg="false" Sequence="13"/>
+    <ROW File="codecs.pyc" Component_="atexit.pyc" FileName="codecs.pyc" Attributes="0" SourcePath="dist\py2exe\codecs.pyc" SelfReg="false" Sequence="14"/>
+    <ROW File="colorsel.c" Component_="alphatest.png" FileName="colorsel.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\colorsel.c" SelfReg="false" Sequence="329"/>
+    <ROW File="combobox.c" Component_="alphatest.png" FileName="combobox.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\combobox.c" SelfReg="false" Sequence="330"/>
+    <ROW File="config.pyc" Component_="config.pyc" FileName="config.pyc" Attributes="0" SourcePath="dist\py2exe\zentrayicon\config.pyc" SelfReg="false" Sequence="410"/>
+    <ROW File="constants.pyc" Component_="constants.pyc" FileName="consta~1.pyc|constants.pyc" Attributes="0" SourcePath="dist\py2exe\gobject\constants.pyc" SelfReg="false" Sequence="205"/>
+    <ROW File="cookielib.pyc" Component_="atexit.pyc" FileName="cookie~1.pyc|cookielib.pyc" Attributes="0" SourcePath="dist\py2exe\cookielib.pyc" SelfReg="false" Sequence="16"/>
+    <ROW File="copy.pyc" Component_="atexit.pyc" FileName="copy.pyc" Attributes="0" SourcePath="dist\py2exe\copy.pyc" SelfReg="false" Sequence="17"/>
+    <ROW File="copy_reg.pyc" Component_="atexit.pyc" FileName="copy_reg.pyc" Attributes="0" SourcePath="dist\py2exe\copy_reg.pyc" SelfReg="false" Sequence="18"/>
+    <ROW File="cp037.pyc" Component_="aliases.pyc" FileName="cp037.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp037.pyc" SelfReg="false" Sequence="43"/>
+    <ROW File="cp1006.pyc" Component_="aliases.pyc" FileName="cp1006.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1006.pyc" SelfReg="false" Sequence="44"/>
+    <ROW File="cp1026.pyc" Component_="aliases.pyc" FileName="cp1026.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1026.pyc" SelfReg="false" Sequence="45"/>
+    <ROW File="cp1140.pyc" Component_="aliases.pyc" FileName="cp1140.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1140.pyc" SelfReg="false" Sequence="46"/>
+    <ROW File="cp1250.pyc" Component_="aliases.pyc" FileName="cp1250.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1250.pyc" SelfReg="false" Sequence="47"/>
+    <ROW File="cp1251.pyc" Component_="aliases.pyc" FileName="cp1251.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1251.pyc" SelfReg="false" Sequence="48"/>
+    <ROW File="cp1252.pyc" Component_="aliases.pyc" FileName="cp1252.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1252.pyc" SelfReg="false" Sequence="49"/>
+    <ROW File="cp1253.pyc" Component_="aliases.pyc" FileName="cp1253.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1253.pyc" SelfReg="false" Sequence="50"/>
+    <ROW File="cp1254.pyc" Component_="aliases.pyc" FileName="cp1254.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1254.pyc" SelfReg="false" Sequence="51"/>
+    <ROW File="cp1255.pyc" Component_="aliases.pyc" FileName="cp1255.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1255.pyc" SelfReg="false" Sequence="52"/>
+    <ROW File="cp1256.pyc" Component_="aliases.pyc" FileName="cp1256.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1256.pyc" SelfReg="false" Sequence="53"/>
+    <ROW File="cp1257.pyc" Component_="aliases.pyc" FileName="cp1257.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1257.pyc" SelfReg="false" Sequence="54"/>
+    <ROW File="cp1258.pyc" Component_="aliases.pyc" FileName="cp1258.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp1258.pyc" SelfReg="false" Sequence="55"/>
+    <ROW File="cp424.pyc" Component_="aliases.pyc" FileName="cp424.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp424.pyc" SelfReg="false" Sequence="56"/>
+    <ROW File="cp437.pyc" Component_="aliases.pyc" FileName="cp437.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp437.pyc" SelfReg="false" Sequence="57"/>
+    <ROW File="cp500.pyc" Component_="aliases.pyc" FileName="cp500.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp500.pyc" SelfReg="false" Sequence="58"/>
+    <ROW File="cp737.pyc" Component_="aliases.pyc" FileName="cp737.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp737.pyc" SelfReg="false" Sequence="59"/>
+    <ROW File="cp775.pyc" Component_="aliases.pyc" FileName="cp775.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp775.pyc" SelfReg="false" Sequence="60"/>
+    <ROW File="cp850.pyc" Component_="aliases.pyc" FileName="cp850.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp850.pyc" SelfReg="false" Sequence="61"/>
+    <ROW File="cp852.pyc" Component_="aliases.pyc" FileName="cp852.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp852.pyc" SelfReg="false" Sequence="62"/>
+    <ROW File="cp855.pyc" Component_="aliases.pyc" FileName="cp855.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp855.pyc" SelfReg="false" Sequence="63"/>
+    <ROW File="cp856.pyc" Component_="aliases.pyc" FileName="cp856.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp856.pyc" SelfReg="false" Sequence="64"/>
+    <ROW File="cp857.pyc" Component_="aliases.pyc" FileName="cp857.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp857.pyc" SelfReg="false" Sequence="65"/>
+    <ROW File="cp860.pyc" Component_="aliases.pyc" FileName="cp860.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp860.pyc" SelfReg="false" Sequence="66"/>
+    <ROW File="cp861.pyc" Component_="aliases.pyc" FileName="cp861.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp861.pyc" SelfReg="false" Sequence="67"/>
+    <ROW File="cp862.pyc" Component_="aliases.pyc" FileName="cp862.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp862.pyc" SelfReg="false" Sequence="68"/>
+    <ROW File="cp863.pyc" Component_="aliases.pyc" FileName="cp863.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp863.pyc" SelfReg="false" Sequence="69"/>
+    <ROW File="cp864.pyc" Component_="aliases.pyc" FileName="cp864.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp864.pyc" SelfReg="false" Sequence="70"/>
+    <ROW File="cp865.pyc" Component_="aliases.pyc" FileName="cp865.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp865.pyc" SelfReg="false" Sequence="71"/>
+    <ROW File="cp866.pyc" Component_="aliases.pyc" FileName="cp866.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp866.pyc" SelfReg="false" Sequence="72"/>
+    <ROW File="cp869.pyc" Component_="aliases.pyc" FileName="cp869.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp869.pyc" SelfReg="false" Sequence="73"/>
+    <ROW File="cp874.pyc" Component_="aliases.pyc" FileName="cp874.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp874.pyc" SelfReg="false" Sequence="74"/>
+    <ROW File="cp875.pyc" Component_="aliases.pyc" FileName="cp875.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp875.pyc" SelfReg="false" Sequence="75"/>
+    <ROW File="cp932.pyc" Component_="aliases.pyc" FileName="cp932.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp932.pyc" SelfReg="false" Sequence="76"/>
+    <ROW File="cp949.pyc" Component_="aliases.pyc" FileName="cp949.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp949.pyc" SelfReg="false" Sequence="77"/>
+    <ROW File="cp950.pyc" Component_="aliases.pyc" FileName="cp950.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\cp950.pyc" SelfReg="false" Sequence="78"/>
+    <ROW File="delicious.conf" Component_="autohint.conf" FileName="80-del~1.con|80-delicious.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\80-delicious.conf" SelfReg="false" Sequence="173"/>
+    <ROW File="delicious.conf_1" Component_="fix_globaladvance.conf" FileName="80-del~1.con|80-delicious.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\80-delicious.conf" SelfReg="false" Sequence="189"/>
+    <ROW File="demo.ui" Component_="alphatest.png" FileName="demo.ui" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\demo.ui" SelfReg="false" Sequence="331"/>
+    <ROW File="deprecation.pyc" Component_="deprecation.pyc" FileName="deprec~1.pyc|deprecation.pyc" Attributes="0" SourcePath="dist\py2exe\gtk\deprecation.pyc" SelfReg="false" Sequence="211"/>
+    <ROW File="dialog.c" Component_="alphatest.png" FileName="dialog.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\dialog.c" SelfReg="false" Sequence="332"/>
+    <ROW File="difflib.pyc" Component_="atexit.pyc" FileName="difflib.pyc" Attributes="0" SourcePath="dist\py2exe\difflib.pyc" SelfReg="false" Sequence="19"/>
+    <ROW File="dis.pyc" Component_="atexit.pyc" FileName="dis.pyc" Attributes="0" SourcePath="dist\py2exe\dis.pyc" SelfReg="false" Sequence="20"/>
+    <ROW File="doctest.pyc" Component_="atexit.pyc" FileName="doctest.pyc" Attributes="0" SourcePath="dist\py2exe\doctest.pyc" SelfReg="false" Sequence="21"/>
+    <ROW File="drawingarea.c" Component_="alphatest.png" FileName="drawin~1.c|drawingarea.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\drawingarea.c" SelfReg="false" Sequence="333"/>
+    <ROW File="dummy_thread.pyc" Component_="atexit.pyc" FileName="dummy_~1.pyc|dummy_thread.pyc" Attributes="0" SourcePath="dist\py2exe\dummy_thread.pyc" SelfReg="false" Sequence="22"/>
+    <ROW File="dummy_threading.pyc" Component_="atexit.pyc" FileName="dummy_~2.pyc|dummy_threading.pyc" Attributes="0" SourcePath="dist\py2exe\dummy_threading.pyc" SelfReg="false" Sequence="23"/>
+    <ROW File="editable_cells.c" Component_="alphatest.png" FileName="editab~1.c|editable_cells.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\editable_cells.c" SelfReg="false" Sequence="334"/>
+    <ROW File="encoders.pyc" Component_="base64mime.pyc" FileName="encoders.pyc" Attributes="0" SourcePath="dist\py2exe\email\encoders.pyc" SelfReg="false" Sequence="26"/>
+    <ROW File="entry_completion.c" Component_="alphatest.png" FileName="entry_~1.c|entry_completion.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\entry_completion.c" SelfReg="false" Sequence="335"/>
+    <ROW File="errors.pyc" Component_="base64mime.pyc" FileName="errors.pyc" Attributes="0" SourcePath="dist\py2exe\email\errors.pyc" SelfReg="false" Sequence="27"/>
+    <ROW File="euc_jis_2004.pyc" Component_="aliases.pyc" FileName="euc_ji~2.pyc|euc_jis_2004.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\euc_jis_2004.pyc" SelfReg="false" Sequence="80"/>
+    <ROW File="euc_jisx0213.pyc" Component_="aliases.pyc" FileName="euc_ji~1.pyc|euc_jisx0213.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\euc_jisx0213.pyc" SelfReg="false" Sequence="79"/>
+    <ROW File="euc_jp.pyc" Component_="aliases.pyc" FileName="euc_jp.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\euc_jp.pyc" SelfReg="false" Sequence="81"/>
+    <ROW File="euc_kr.pyc" Component_="aliases.pyc" FileName="euc_kr.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\euc_kr.pyc" SelfReg="false" Sequence="82"/>
+    <ROW File="expander.c" Component_="alphatest.png" FileName="expander.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\expander.c" SelfReg="false" Sequence="336"/>
+    <ROW File="feedparser.pyc" Component_="base64mime.pyc" FileName="feedpa~1.pyc|feedparser.pyc" Attributes="0" SourcePath="dist\py2exe\email\feedparser.pyc" SelfReg="false" Sequence="28"/>
+    <ROW File="fix_globaladvance.conf" Component_="autohint.conf" FileName="20-fix~1.con|20-fix-globaladvance.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\20-fix-globaladvance.conf" SelfReg="false" Sequence="158"/>
+    <ROW File="fix_globaladvance.conf_1" Component_="fix_globaladvance.conf" FileName="20-fix~1.con|20-fix-globaladvance.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\20-fix-globaladvance.conf" SelfReg="false" Sequence="176"/>
+    <ROW File="floppybuddy.gif" Component_="alphatest.png" FileName="floppy~1.gif|floppybuddy.gif" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\floppybuddy.gif" SelfReg="false" Sequence="337"/>
+    <ROW File="fnmatch.pyc" Component_="atexit.pyc" FileName="fnmatch.pyc" Attributes="0" SourcePath="dist\py2exe\fnmatch.pyc" SelfReg="false" Sequence="199"/>
+    <ROW File="fonts.conf" Component_="fonts.conf" FileName="fonts~1.con|fonts.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\fonts.conf" SelfReg="false" Sequence="191"/>
+    <ROW File="fonts.dtd" Component_="fonts.conf" FileName="fonts.dtd" Attributes="0" SourcePath="dist\py2exe\etc\fonts\fonts.dtd" SelfReg="false" Sequence="192"/>
+    <ROW File="fonts_persian.conf" Component_="autohint.conf" FileName="65-fon~1.con|65-fonts-persian.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\65-fonts-persian.conf" SelfReg="false" Sequence="168"/>
+    <ROW File="fonts_persian.conf_1" Component_="fix_globaladvance.conf" FileName="65-fon~1.con|65-fonts-persian.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\65-fonts-persian.conf" SelfReg="false" Sequence="186"/>
+    <ROW File="ftplib.pyc" Component_="atexit.pyc" FileName="ftplib.pyc" Attributes="0" SourcePath="dist\py2exe\ftplib.pyc" SelfReg="false" Sequence="200"/>
+    <ROW File="future_.pyc" Component_="atexit.pyc" FileName="__futu~1.pyc|__future__.pyc" Attributes="0" SourcePath="dist\py2exe\__future__.pyc" SelfReg="false" Sequence="432"/>
+    <ROW File="gb18030.pyc" Component_="aliases.pyc" FileName="gb18030.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\gb18030.pyc" SelfReg="false" Sequence="83"/>
+    <ROW File="gb2312.pyc" Component_="aliases.pyc" FileName="gb2312.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\gb2312.pyc" SelfReg="false" Sequence="84"/>
+    <ROW File="gbk.pyc" Component_="aliases.pyc" FileName="gbk.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\gbk.pyc" SelfReg="false" Sequence="85"/>
+    <ROW File="gdk_pixbuf.loaders" Component_="gdk_pixbuf.loaders" FileName="gdk-pi~1.loa|gdk-pixbuf.loaders" Attributes="0" SourcePath="dist\py2exe\etc\gtk-2.0\gdk-pixbuf.loaders" SelfReg="false" Sequence="193"/>
+    <ROW File="gdk_pixbuf_query_loaders.1" Component_="gdk_pixbuf_query_loaders.1" FileName="gdk-pi~1.1|gdk-pixbuf-query-loaders.1" Attributes="0" SourcePath="dist\py2exe\share\man\man1\gdk-pixbuf-query-loaders.1" SelfReg="false" Sequence="366"/>
+    <ROW File="generic.conf" Component_="autohint.conf" FileName="40-gen~1.con|40-generic.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\40-generic.conf" SelfReg="false" Sequence="163"/>
+    <ROW File="generic.conf_1" Component_="fix_globaladvance.conf" FileName="40-gen~1.con|40-generic.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\40-generic.conf" SelfReg="false" Sequence="181"/>
+    <ROW File="getopt.pyc" Component_="atexit.pyc" FileName="getopt.pyc" Attributes="0" SourcePath="dist\py2exe\getopt.pyc" SelfReg="false" Sequence="201"/>
+    <ROW File="getpass.pyc" Component_="atexit.pyc" FileName="getpass.pyc" Attributes="0" SourcePath="dist\py2exe\getpass.pyc" SelfReg="false" Sequence="202"/>
+    <ROW File="gettext.pyc" Component_="atexit.pyc" FileName="gettext.pyc" Attributes="0" SourcePath="dist\py2exe\gettext.pyc" SelfReg="false" Sequence="203"/>
+    <ROW File="glade.pyc" Component_="deprecation.pyc" FileName="glade.pyc" Attributes="0" SourcePath="dist\py2exe\gtk\glade.pyc" SelfReg="false" Sequence="212"/>
+    <ROW File="glade_2.0.dtd" Component_="glade_2.0.dtd" FileName="glade-~1.dtd|glade-2.0.dtd" Attributes="0" SourcePath="dist\py2exe\share\xml\libglade\glade-2.0.dtd" SelfReg="false" Sequence="377"/>
+    <ROW File="glob.pyc" Component_="atexit.pyc" FileName="glob.pyc" Attributes="0" SourcePath="dist\py2exe\glob.pyc" SelfReg="false" Sequence="204"/>
+    <ROW File="gnome_applets.png" Component_="alphatest.png" FileName="gnome-~1.png|gnome-applets.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-applets.png" SelfReg="false" Sequence="338"/>
+    <ROW File="gnome_calendar.png" Component_="alphatest.png" FileName="gnome-~2.png|gnome-calendar.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-calendar.png" SelfReg="false" Sequence="339"/>
+    <ROW File="gnome_foot.png" Component_="alphatest.png" FileName="gnome-~3.png|gnome-foot.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-foot.png" SelfReg="false" Sequence="340"/>
+    <ROW File="gnome_fs_directory.png" Component_="alphatest.png" FileName="gnome-~4.png|gnome-fs-directory.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-fs-directory.png" SelfReg="false" Sequence="341"/>
+    <ROW File="gnome_fs_regular.png" Component_="alphatest.png" FileName="gnome-~5.png|gnome-fs-regular.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-fs-regular.png" SelfReg="false" Sequence="342"/>
+    <ROW File="gnome_gimp.png" Component_="alphatest.png" FileName="gnome-~6.png|gnome-gimp.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-gimp.png" SelfReg="false" Sequence="343"/>
+    <ROW File="gnome_gmush.png" Component_="alphatest.png" FileName="gnome-~7.png|gnome-gmush.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-gmush.png" SelfReg="false" Sequence="344"/>
+    <ROW File="gnome_gsame.png" Component_="alphatest.png" FileName="gnome-~8.png|gnome-gsame.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnome-gsame.png" SelfReg="false" Sequence="345"/>
+    <ROW File="gnu_keys.png" Component_="alphatest.png" FileName="gnu-keys.png" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gnu-keys.png" SelfReg="false" Sequence="346"/>
+    <ROW File="gobject._gobject.pyd" Component_="atexit.pyc" FileName="gobjec~1.pyd|gobject._gobject.pyd" Attributes="0" SourcePath="dist\py2exe\gobject._gobject.pyd" SelfReg="false" Sequence="209"/>
+    <ROW File="gobject.pyc" Component_="constants.pyc" FileName="_gobject.pyc" Attributes="0" SourcePath="dist\py2exe\gobject\_gobject.pyc" SelfReg="false" Sequence="207"/>
+    <ROW File="gopherlib.pyc" Component_="atexit.pyc" FileName="gopher~1.pyc|gopherlib.pyc" Attributes="0" SourcePath="dist\py2exe\gopherlib.pyc" SelfReg="false" Sequence="210"/>
+    <ROW File="gtk._gtk.pyd" Component_="atexit.pyc" FileName="gtk_gt~1.pyd|gtk._gtk.pyd" Attributes="0" SourcePath="dist\py2exe\gtk._gtk.pyd" SelfReg="false" Sequence="217"/>
+    <ROW File="gtk.glade.pyd" Component_="atexit.pyc" FileName="gtkgla~1.pyd|gtk.glade.pyd" Attributes="0" SourcePath="dist\py2exe\gtk.glade.pyd" SelfReg="false" Sequence="216"/>
+    <ROW File="gtk.immodules" Component_="gdk_pixbuf.loaders" FileName="gtk~1.imm|gtk.immodules" Attributes="0" SourcePath="dist\py2exe\etc\gtk-2.0\gtk.immodules" SelfReg="false" Sequence="194"/>
+    <ROW File="gtk.pyc" Component_="deprecation.pyc" FileName="_gtk.pyc" Attributes="0" SourcePath="dist\py2exe\gtk\_gtk.pyc" SelfReg="false" Sequence="213"/>
+    <ROW File="gtk_logo_rgb.gif" Component_="alphatest.png" FileName="gtk-lo~1.gif|gtk-logo-rgb.gif" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\gtk-logo-rgb.gif" SelfReg="false" Sequence="347"/>
+    <ROW File="gtk_query_immodules_2.0.1" Component_="gdk_pixbuf_query_loaders.1" FileName="gtk-qu~1.1|gtk-query-immodules-2.0.1" Attributes="0" SourcePath="dist\py2exe\share\man\man1\gtk-query-immodules-2.0.1" SelfReg="false" Sequence="367"/>
+    <ROW File="gtk_update_icon_cache.1" Component_="gdk_pixbuf_query_loaders.1" FileName="gtk-up~1.1|gtk-update-icon-cache.1" Attributes="0" SourcePath="dist\py2exe\share\man\man1\gtk-update-icon-cache.1" SelfReg="false" Sequence="368"/>
+    <ROW File="gtkrc" Component_="gdk_pixbuf.loaders" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\etc\gtk-2.0\gtkrc" SelfReg="false" Sequence="195"/>
+    <ROW File="gtkrc_1" Component_="gtkrc" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\Default\gtk-2.0-key\gtkrc" SelfReg="false" Sequence="369"/>
+    <ROW File="gtkrc_2" Component_="gtkrc_1" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\Emacs\gtk-2.0-key\gtkrc" SelfReg="false" Sequence="370"/>
+    <ROW File="gtkrc_3" Component_="gtkrc_2" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\Metal\gtk-2.0\gtkrc" SelfReg="false" Sequence="371"/>
+    <ROW File="gtkrc_4" Component_="gtkrc_3" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\MS-Windows\gtk-2.0\gtkrc" SelfReg="false" Sequence="373"/>
+    <ROW File="gtkrc_5" Component_="gtkrc_4" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\Raleigh\gtk-2.0\gtkrc" SelfReg="false" Sequence="374"/>
+    <ROW File="gtkrc_6" Component_="gtkrc_5" FileName="gtkrc" Attributes="0" SourcePath="dist\py2exe\share\themes\Redmond95\gtk-2.0\gtkrc" SelfReg="false" Sequence="375"/>
+    <ROW File="gts.png" Component_="gts.png" FileName="gts.png" Attributes="0" SourcePath="dist\py2exe\share\gtkthemeselector\pixmaps\gts.png" SelfReg="false" Sequence="365"/>
+    <ROW File="hashlib.pyc" Component_="atexit.pyc" FileName="hashlib.pyc" Attributes="0" SourcePath="dist\py2exe\hashlib.pyc" SelfReg="false" Sequence="218"/>
+    <ROW File="hashlib.pyc_1" Component_="atexit.pyc" FileName="_hashlib.pyc" Attributes="0" SourcePath="dist\py2exe\_hashlib.pyc" SelfReg="false" Sequence="422"/>
+    <ROW File="hashlib.pyd" Component_="atexit.pyc" FileName="_hashlib.pyd" Attributes="0" SourcePath="dist\py2exe\_hashlib.pyd" SelfReg="false" Sequence="423"/>
+    <ROW File="heapq.pyc" Component_="atexit.pyc" FileName="heapq.pyc" Attributes="0" SourcePath="dist\py2exe\heapq.pyc" SelfReg="false" Sequence="219"/>
+    <ROW File="hex_codec.pyc" Component_="aliases.pyc" FileName="hex_co~1.pyc|hex_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\hex_codec.pyc" SelfReg="false" Sequence="86"/>
+    <ROW File="hp_roman8.pyc" Component_="aliases.pyc" FileName="hp_rom~1.pyc|hp_roman8.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\hp_roman8.pyc" SelfReg="false" Sequence="87"/>
+    <ROW File="httplib.pyc" Component_="atexit.pyc" FileName="httplib.pyc" Attributes="0" SourcePath="dist\py2exe\httplib.pyc" SelfReg="false" Sequence="220"/>
+    <ROW File="hypertext.c" Component_="alphatest.png" FileName="hypert~1.c|hypertext.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\hypertext.c" SelfReg="false" Sequence="348"/>
+    <ROW File="hz.pyc" Component_="aliases.pyc" FileName="hz.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\hz.pyc" SelfReg="false" Sequence="88"/>
+    <ROW File="iconv.dll" Component_="iconv.dll" FileName="iconv.dll" Attributes="0" SourcePath="dist\py2exe\iconv.dll" SelfReg="false" Sequence="221"/>
+    <ROW File="iconview.c" Component_="alphatest.png" FileName="iconview.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\iconview.c" SelfReg="false" Sequence="349"/>
+    <ROW File="iconview_edit.c" Component_="alphatest.png" FileName="iconvi~1.c|iconview_edit.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\iconview_edit.c" SelfReg="false" Sequence="350"/>
+    <ROW File="idna.pyc" Component_="aliases.pyc" FileName="idna.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\idna.pyc" SelfReg="false" Sequence="89"/>
+    <ROW File="im_am_et.dll" Component_="im_am_et.dll" FileName="im-am-et.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-am-et.dll" SelfReg="false" Sequence="228"/>
+    <ROW File="im_cedilla.dll" Component_="im_cedilla.dll" FileName="im-ced~1.dll|im-cedilla.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-cedilla.dll" SelfReg="false" Sequence="229"/>
+    <ROW File="im_cyrillic_translit.dll" Component_="im_cyrillic_translit.dll" FileName="im-cyr~1.dll|im-cyrillic-translit.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-cyrillic-translit.dll" SelfReg="false" Sequence="230"/>
+    <ROW File="im_ime.dll" Component_="im_ime.dll" FileName="im-ime.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-ime.dll" SelfReg="false" Sequence="231"/>
+    <ROW File="im_inuktitut.dll" Component_="im_inuktitut.dll" FileName="im-inu~1.dll|im-inuktitut.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-inuktitut.dll" SelfReg="false" Sequence="232"/>
+    <ROW File="im_ipa.dll" Component_="im_ipa.dll" FileName="im-ipa.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-ipa.dll" SelfReg="false" Sequence="233"/>
+    <ROW File="im_multipress.conf" Component_="gdk_pixbuf.loaders" FileName="im-mul~1.con|im-multipress.conf" Attributes="0" SourcePath="dist\py2exe\etc\gtk-2.0\im-multipress.conf" SelfReg="false" Sequence="196"/>
+    <ROW File="im_multipress.dll" Component_="im_multipress.dll" FileName="im-mul~1.dll|im-multipress.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-multipress.dll" SelfReg="false" Sequence="234"/>
+    <ROW File="im_thai.dll" Component_="im_thai.dll" FileName="im-thai.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-thai.dll" SelfReg="false" Sequence="235"/>
+    <ROW File="im_ti_er.dll" Component_="im_ti_er.dll" FileName="im-ti-er.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-ti-er.dll" SelfReg="false" Sequence="236"/>
+    <ROW File="im_ti_et.dll" Component_="im_ti_et.dll" FileName="im-ti-et.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-ti-et.dll" SelfReg="false" Sequence="237"/>
+    <ROW File="im_viqr.dll" Component_="im_viqr.dll" FileName="im-viqr.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\immodules\im-viqr.dll" SelfReg="false" Sequence="238"/>
+    <ROW File="images.c" Component_="alphatest.png" FileName="images.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\images.c" SelfReg="false" Sequence="351"/>
+    <ROW File="init_.pyc" Component_="cairo.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\cairo\__init__.pyc" SelfReg="false" Sequence="10"/>
+    <ROW File="init_.pyc_1" Component_="init_.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\email\mime\__init__.pyc" SelfReg="false" Sequence="30"/>
+    <ROW File="init_.pyc_2" Component_="base64mime.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\email\__init__.pyc" SelfReg="false" Sequence="35"/>
+    <ROW File="init_.pyc_3" Component_="aliases.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\__init__.pyc" SelfReg="false" Sequence="150"/>
+    <ROW File="init_.pyc_4" Component_="constants.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\gobject\__init__.pyc" SelfReg="false" Sequence="208"/>
+    <ROW File="init_.pyc_5" Component_="deprecation.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\gtk\__init__.pyc" SelfReg="false" Sequence="215"/>
+    <ROW File="init_.pyc_6" Component_="init_.pyc_1" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\logging\__init__.pyc" SelfReg="false" Sequence="288"/>
+    <ROW File="init_.pyc_7" Component_="config.pyc" FileName="__init__.pyc" Attributes="0" SourcePath="dist\py2exe\zentrayicon\__init__.pyc" SelfReg="false" Sequence="420"/>
+    <ROW File="inspect.pyc" Component_="atexit.pyc" FileName="inspect.pyc" Attributes="0" SourcePath="dist\py2exe\inspect.pyc" SelfReg="false" Sequence="222"/>
+    <ROW File="intl.dll" Component_="intl.dll" FileName="intl.dll" Attributes="0" SourcePath="dist\py2exe\intl.dll" SelfReg="false" Sequence="223"/>
+    <ROW File="iso2022_jp.pyc" Component_="aliases.pyc" FileName="iso202~1.pyc|iso2022_jp.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp.pyc" SelfReg="false" Sequence="90"/>
+    <ROW File="iso2022_jp_1.pyc" Component_="aliases.pyc" FileName="iso202~2.pyc|iso2022_jp_1.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp_1.pyc" SelfReg="false" Sequence="91"/>
+    <ROW File="iso2022_jp_2.pyc" Component_="aliases.pyc" FileName="iso202~3.pyc|iso2022_jp_2.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp_2.pyc" SelfReg="false" Sequence="92"/>
+    <ROW File="iso2022_jp_2004.pyc" Component_="aliases.pyc" FileName="iso202~4.pyc|iso2022_jp_2004.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp_2004.pyc" SelfReg="false" Sequence="93"/>
+    <ROW File="iso2022_jp_3.pyc" Component_="aliases.pyc" FileName="iso202~5.pyc|iso2022_jp_3.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp_3.pyc" SelfReg="false" Sequence="94"/>
+    <ROW File="iso2022_jp_ext.pyc" Component_="aliases.pyc" FileName="iso202~6.pyc|iso2022_jp_ext.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_jp_ext.pyc" SelfReg="false" Sequence="95"/>
+    <ROW File="iso2022_kr.pyc" Component_="aliases.pyc" FileName="iso202~7.pyc|iso2022_kr.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso2022_kr.pyc" SelfReg="false" Sequence="96"/>
+    <ROW File="iso8859_1.pyc" Component_="aliases.pyc" FileName="iso885~1.pyc|iso8859_1.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_1.pyc" SelfReg="false" Sequence="97"/>
+    <ROW File="iso8859_10.pyc" Component_="aliases.pyc" FileName="iso885~2.pyc|iso8859_10.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_10.pyc" SelfReg="false" Sequence="98"/>
+    <ROW File="iso8859_11.pyc" Component_="aliases.pyc" FileName="iso885~3.pyc|iso8859_11.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_11.pyc" SelfReg="false" Sequence="99"/>
+    <ROW File="iso8859_13.pyc" Component_="aliases.pyc" FileName="iso885~4.pyc|iso8859_13.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_13.pyc" SelfReg="false" Sequence="100"/>
+    <ROW File="iso8859_14.pyc" Component_="aliases.pyc" FileName="iso885~5.pyc|iso8859_14.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_14.pyc" SelfReg="false" Sequence="101"/>
+    <ROW File="iso8859_15.pyc" Component_="aliases.pyc" FileName="iso885~6.pyc|iso8859_15.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_15.pyc" SelfReg="false" Sequence="102"/>
+    <ROW File="iso8859_16.pyc" Component_="aliases.pyc" FileName="iso885~7.pyc|iso8859_16.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_16.pyc" SelfReg="false" Sequence="103"/>
+    <ROW File="iso8859_2.pyc" Component_="aliases.pyc" FileName="iso885~8.pyc|iso8859_2.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_2.pyc" SelfReg="false" Sequence="104"/>
+    <ROW File="iso8859_3.pyc" Component_="aliases.pyc" FileName="iso885~9.pyc|iso8859_3.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_3.pyc" SelfReg="false" Sequence="105"/>
+    <ROW File="iso8859_4.pyc" Component_="aliases.pyc" FileName="iso88~10.pyc|iso8859_4.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_4.pyc" SelfReg="false" Sequence="106"/>
+    <ROW File="iso8859_5.pyc" Component_="aliases.pyc" FileName="iso88~11.pyc|iso8859_5.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_5.pyc" SelfReg="false" Sequence="107"/>
+    <ROW File="iso8859_6.pyc" Component_="aliases.pyc" FileName="iso88~12.pyc|iso8859_6.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_6.pyc" SelfReg="false" Sequence="108"/>
+    <ROW File="iso8859_7.pyc" Component_="aliases.pyc" FileName="iso88~13.pyc|iso8859_7.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_7.pyc" SelfReg="false" Sequence="109"/>
+    <ROW File="iso8859_8.pyc" Component_="aliases.pyc" FileName="iso88~14.pyc|iso8859_8.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_8.pyc" SelfReg="false" Sequence="110"/>
+    <ROW File="iso8859_9.pyc" Component_="aliases.pyc" FileName="iso88~15.pyc|iso8859_9.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\iso8859_9.pyc" SelfReg="false" Sequence="111"/>
+    <ROW File="johab.pyc" Component_="aliases.pyc" FileName="johab.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\johab.pyc" SelfReg="false" Sequence="112"/>
+    <ROW File="koi8_r.pyc" Component_="aliases.pyc" FileName="koi8_r.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\koi8_r.pyc" SelfReg="false" Sequence="113"/>
+    <ROW File="koi8_u.pyc" Component_="aliases.pyc" FileName="koi8_u.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\koi8_u.pyc" SelfReg="false" Sequence="114"/>
+    <ROW File="latin.conf" Component_="autohint.conf" FileName="60-lat~1.con|60-latin.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\60-latin.conf" SelfReg="false" Sequence="167"/>
+    <ROW File="latin.conf_1" Component_="fix_globaladvance.conf" FileName="60-lat~1.con|60-latin.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\60-latin.conf" SelfReg="false" Sequence="185"/>
+    <ROW File="latin_1.pyc" Component_="aliases.pyc" FileName="latin_1.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\latin_1.pyc" SelfReg="false" Sequence="115"/>
+    <ROW File="lazyutils.pyc" Component_="deprecation.pyc" FileName="_lazyu~1.pyc|_lazyutils.pyc" Attributes="0" SourcePath="dist\py2exe\gtk\_lazyutils.pyc" SelfReg="false" Sequence="214"/>
+    <ROW File="libatk_1.0_0.dll" Component_="libatk_1.0_0.dll" FileName="libatk~1.dll|libatk-1.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libatk-1.0-0.dll" SelfReg="false" Sequence="268"/>
+    <ROW File="libcairo_2.dll" Component_="libcairo_2.dll" FileName="libcai~1.dll|libcairo-2.dll" Attributes="0" SourcePath="dist\py2exe\libcairo-2.dll" SelfReg="false" Sequence="269"/>
+    <ROW File="libfontconfig_1.dll" Component_="libfontconfig_1.dll" FileName="libfon~1.dll|libfontconfig-1.dll" Attributes="0" SourcePath="dist\py2exe\libfontconfig-1.dll" SelfReg="false" Sequence="270"/>
+    <ROW File="libfreetype_6.dll" Component_="libfreetype_6.dll" FileName="libfre~1.dll|libfreetype-6.dll" Attributes="0" SourcePath="dist\py2exe\libfreetype-6.dll" SelfReg="false" Sequence="271"/>
+    <ROW File="libgdk_pixbuf_2.0_0.dll" Component_="libgdk_pixbuf_2.0_0.dll" FileName="libgdk~2.dll|libgdk_pixbuf-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgdk_pixbuf-2.0-0.dll" SelfReg="false" Sequence="273"/>
+    <ROW File="libgdk_win32_2.0_0.dll" Component_="libgdk_win32_2.0_0.dll" FileName="libgdk~1.dll|libgdk-win32-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgdk-win32-2.0-0.dll" SelfReg="false" Sequence="272"/>
+    <ROW File="libglade_2.0_0.dll" Component_="libglade_2.0_0.dll" FileName="libgla~1.dll|libglade-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libglade-2.0-0.dll" SelfReg="false" Sequence="274"/>
+    <ROW File="libglib_2.0_0.dll" Component_="libglib_2.0_0.dll" FileName="libgli~1.dll|libglib-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libglib-2.0-0.dll" SelfReg="false" Sequence="275"/>
+    <ROW File="libgmodule_2.0_0.dll" Component_="libgmodule_2.0_0.dll" FileName="libgmo~1.dll|libgmodule-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgmodule-2.0-0.dll" SelfReg="false" Sequence="276"/>
+    <ROW File="libgobject_2.0_0.dll" Component_="libgobject_2.0_0.dll" FileName="libgob~1.dll|libgobject-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgobject-2.0-0.dll" SelfReg="false" Sequence="277"/>
+    <ROW File="libgthread_2.0_0.dll" Component_="libgthread_2.0_0.dll" FileName="libgth~1.dll|libgthread-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgthread-2.0-0.dll" SelfReg="false" Sequence="278"/>
+    <ROW File="libgtk_win32_2.0_0.dll" Component_="libgtk_win32_2.0_0.dll" FileName="libgtk~1.dll|libgtk-win32-2.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libgtk-win32-2.0-0.dll" SelfReg="false" Sequence="279"/>
+    <ROW File="libmetal.dll" Component_="libmetal.dll" FileName="libmetal.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.4.0\engines\libmetal.dll" SelfReg="false" Sequence="254"/>
+    <ROW File="libpango_1.0_0.dll" Component_="libpango_1.0_0.dll" FileName="libpan~1.dll|libpango-1.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libpango-1.0-0.dll" SelfReg="false" Sequence="280"/>
+    <ROW File="libpangocairo_1.0_0.dll" Component_="libpangocairo_1.0_0.dll" FileName="libpan~2.dll|libpangocairo-1.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libpangocairo-1.0-0.dll" SelfReg="false" Sequence="281"/>
+    <ROW File="libpangoft2_1.0_0.dll" Component_="libpangoft2_1.0_0.dll" FileName="libpan~3.dll|libpangoft2-1.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libpangoft2-1.0-0.dll" SelfReg="false" Sequence="282"/>
+    <ROW File="libpangowin32_1.0_0.dll" Component_="libpangowin32_1.0_0.dll" FileName="libpan~4.dll|libpangowin32-1.0-0.dll" Attributes="0" SourcePath="dist\py2exe\libpangowin32-1.0-0.dll" SelfReg="false" Sequence="283"/>
+    <ROW File="libpixbufloader_ani.dll" Component_="libpixbufloader_ani.dll" FileName="libpix~1.dll|libpixbufloader-ani.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-ani.dll" SelfReg="false" Sequence="239"/>
+    <ROW File="libpixbufloader_bmp.dll" Component_="libpixbufloader_bmp.dll" FileName="libpix~2.dll|libpixbufloader-bmp.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-bmp.dll" SelfReg="false" Sequence="240"/>
+    <ROW File="libpixbufloader_gif.dll" Component_="libpixbufloader_gif.dll" FileName="libpix~3.dll|libpixbufloader-gif.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-gif.dll" SelfReg="false" Sequence="241"/>
+    <ROW File="libpixbufloader_ico.dll" Component_="libpixbufloader_ico.dll" FileName="libpix~4.dll|libpixbufloader-ico.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-ico.dll" SelfReg="false" Sequence="242"/>
+    <ROW File="libpixbufloader_jpeg.dll" Component_="libpixbufloader_jpeg.dll" FileName="libpix~5.dll|libpixbufloader-jpeg.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-jpeg.dll" SelfReg="false" Sequence="243"/>
+    <ROW File="libpixbufloader_pcx.dll" Component_="libpixbufloader_pcx.dll" FileName="libpix~6.dll|libpixbufloader-pcx.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-pcx.dll" SelfReg="false" Sequence="244"/>
+    <ROW File="libpixbufloader_png.dll" Component_="libpixbufloader_png.dll" FileName="libpix~7.dll|libpixbufloader-png.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-png.dll" SelfReg="false" Sequence="245"/>
+    <ROW File="libpixbufloader_pnm.dll" Component_="libpixbufloader_pnm.dll" FileName="libpix~8.dll|libpixbufloader-pnm.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-pnm.dll" SelfReg="false" Sequence="246"/>
+    <ROW File="libpixbufloader_ras.dll" Component_="libpixbufloader_ras.dll" FileName="libpix~9.dll|libpixbufloader-ras.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-ras.dll" SelfReg="false" Sequence="247"/>
+    <ROW File="libpixbufloader_tga.dll" Component_="libpixbufloader_tga.dll" FileName="libpi~10.dll|libpixbufloader-tga.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-tga.dll" SelfReg="false" Sequence="248"/>
+    <ROW File="libpixbufloader_tiff.dll" Component_="libpixbufloader_tiff.dll" FileName="libpi~11.dll|libpixbufloader-tiff.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-tiff.dll" SelfReg="false" Sequence="249"/>
+    <ROW File="libpixbufloader_wbmp.dll" Component_="libpixbufloader_wbmp.dll" FileName="libpi~12.dll|libpixbufloader-wbmp.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-wbmp.dll" SelfReg="false" Sequence="250"/>
+    <ROW File="libpixbufloader_xbm.dll" Component_="libpixbufloader_xbm.dll" FileName="libpi~13.dll|libpixbufloader-xbm.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-xbm.dll" SelfReg="false" Sequence="251"/>
+    <ROW File="libpixbufloader_xpm.dll" Component_="libpixbufloader_xpm.dll" FileName="libpi~14.dll|libpixbufloader-xpm.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\libpixbufloader-xpm.dll" SelfReg="false" Sequence="252"/>
+    <ROW File="libpixmap.dll" Component_="libpixmap.dll" FileName="libpix~1.dll|libpixmap.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\engines\libpixmap.dll" SelfReg="false" Sequence="225"/>
+    <ROW File="libpng12.dll" Component_="libpng12.dll" FileName="libpng12.dll" Attributes="0" SourcePath="dist\py2exe\libpng12.dll" SelfReg="false" Sequence="284"/>
+    <ROW File="libredmond95.dll" Component_="libredmond95.dll" FileName="libred~1.dll|libredmond95.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.4.0\engines\libredmond95.dll" SelfReg="false" Sequence="255"/>
+    <ROW File="libsvg.dll" Component_="libsvg.dll" FileName="libsvg.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\engines\libsvg.dll" SelfReg="false" Sequence="226"/>
+    <ROW File="libwimp.dll" Component_="libwimp.dll" FileName="libwimp.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\engines\libwimp.dll" SelfReg="false" Sequence="227"/>
+    <ROW File="libxml2.dll" Component_="libxml2.dll" FileName="libxml2.dll" Attributes="0" SourcePath="dist\py2exe\libxml2.dll" SelfReg="false" Sequence="285"/>
+    <ROW File="linecache.pyc" Component_="atexit.pyc" FileName="lineca~1.pyc|linecache.pyc" Attributes="0" SourcePath="dist\py2exe\linecache.pyc" SelfReg="false" Sequence="286"/>
+    <ROW File="list_store.c" Component_="alphatest.png" FileName="list_s~1.c|list_store.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\list_store.c" SelfReg="false" Sequence="352"/>
+    <ROW File="local.conf" Component_="autohint.conf" FileName="51-loc~1.con|51-local.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\51-local.conf" SelfReg="false" Sequence="166"/>
+    <ROW File="local.conf_1" Component_="fix_globaladvance.conf" FileName="51-loc~1.con|51-local.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\51-local.conf" SelfReg="false" Sequence="184"/>
+    <ROW File="locale.pyc" Component_="atexit.pyc" FileName="locale.pyc" Attributes="0" SourcePath="dist\py2exe\locale.pyc" SelfReg="false" Sequence="287"/>
+    <ROW File="lohit_gujarati.conf" Component_="autohint.conf" FileName="20-loh~1.con|20-lohit-gujarati.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\20-lohit-gujarati.conf" SelfReg="false" Sequence="159"/>
+    <ROW File="lohit_gujarati.conf_1" Component_="fix_globaladvance.conf" FileName="20-loh~1.con|20-lohit-gujarati.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\20-lohit-gujarati.conf" SelfReg="false" Sequence="177"/>
+    <ROW File="mac_arabic.pyc" Component_="aliases.pyc" FileName="mac_ar~1.pyc|mac_arabic.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_arabic.pyc" SelfReg="false" Sequence="116"/>
+    <ROW File="mac_centeuro.pyc" Component_="aliases.pyc" FileName="mac_ce~1.pyc|mac_centeuro.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_centeuro.pyc" SelfReg="false" Sequence="117"/>
+    <ROW File="mac_croatian.pyc" Component_="aliases.pyc" FileName="mac_cr~1.pyc|mac_croatian.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_croatian.pyc" SelfReg="false" Sequence="118"/>
+    <ROW File="mac_cyrillic.pyc" Component_="aliases.pyc" FileName="mac_cy~1.pyc|mac_cyrillic.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_cyrillic.pyc" SelfReg="false" Sequence="119"/>
+    <ROW File="mac_farsi.pyc" Component_="aliases.pyc" FileName="mac_fa~1.pyc|mac_farsi.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_farsi.pyc" SelfReg="false" Sequence="120"/>
+    <ROW File="mac_greek.pyc" Component_="aliases.pyc" FileName="mac_gr~1.pyc|mac_greek.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_greek.pyc" SelfReg="false" Sequence="121"/>
+    <ROW File="mac_iceland.pyc" Component_="aliases.pyc" FileName="mac_ic~1.pyc|mac_iceland.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_iceland.pyc" SelfReg="false" Sequence="122"/>
+    <ROW File="mac_latin2.pyc" Component_="aliases.pyc" FileName="mac_la~1.pyc|mac_latin2.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_latin2.pyc" SelfReg="false" Sequence="123"/>
+    <ROW File="mac_roman.pyc" Component_="aliases.pyc" FileName="mac_ro~1.pyc|mac_roman.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_roman.pyc" SelfReg="false" Sequence="124"/>
+    <ROW File="mac_romanian.pyc" Component_="aliases.pyc" FileName="mac_ro~2.pyc|mac_romanian.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_romanian.pyc" SelfReg="false" Sequence="125"/>
+    <ROW File="mac_turkish.pyc" Component_="aliases.pyc" FileName="mac_tu~1.pyc|mac_turkish.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mac_turkish.pyc" SelfReg="false" Sequence="126"/>
+    <ROW File="macpath.pyc" Component_="atexit.pyc" FileName="macpath.pyc" Attributes="0" SourcePath="dist\py2exe\macpath.pyc" SelfReg="false" Sequence="289"/>
+    <ROW File="macurl2path.pyc" Component_="atexit.pyc" FileName="macurl~1.pyc|macurl2path.pyc" Attributes="0" SourcePath="dist\py2exe\macurl2path.pyc" SelfReg="false" Sequence="290"/>
+    <ROW File="mbcs.pyc" Component_="aliases.pyc" FileName="mbcs.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\mbcs.pyc" SelfReg="false" Sequence="127"/>
+    <ROW File="menus.c" Component_="alphatest.png" FileName="menus.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\menus.c" SelfReg="false" Sequence="353"/>
+    <ROW File="message.pyc" Component_="base64mime.pyc" FileName="message.pyc" Attributes="0" SourcePath="dist\py2exe\email\message.pyc" SelfReg="false" Sequence="29"/>
+    <ROW File="mimetools.pyc" Component_="atexit.pyc" FileName="mimeto~1.pyc|mimetools.pyc" Attributes="0" SourcePath="dist\py2exe\mimetools.pyc" SelfReg="false" Sequence="291"/>
+    <ROW File="mimetypes.pyc" Component_="atexit.pyc" FileName="mimety~1.pyc|mimetypes.pyc" Attributes="0" SourcePath="dist\py2exe\mimetypes.pyc" SelfReg="false" Sequence="292"/>
+    <ROW File="msvcr71.dll" Component_="msvcr71.dll" FileName="msvcr71.dll" Attributes="0" SourcePath="dist\py2exe\msvcr71.dll" SelfReg="false" Sequence="293"/>
+    <ROW File="new.pyc" Component_="atexit.pyc" FileName="new.pyc" Attributes="0" SourcePath="dist\py2exe\new.pyc" SelfReg="false" Sequence="294"/>
+    <ROW File="no_bitmaps.conf" Component_="autohint.conf" FileName="70-no-~1.con|70-no-bitmaps.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\70-no-bitmaps.conf" SelfReg="false" Sequence="171"/>
+    <ROW File="no_sub_pixel.conf" Component_="autohint.conf" FileName="10-no-~1.con|10-no-sub-pixel.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-no-sub-pixel.conf" SelfReg="false" Sequence="152"/>
+    <ROW File="nonlatin.conf" Component_="autohint.conf" FileName="65-non~1.con|65-nonlatin.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\65-nonlatin.conf" SelfReg="false" Sequence="169"/>
+    <ROW File="nonlatin.conf_1" Component_="fix_globaladvance.conf" FileName="65-non~1.con|65-nonlatin.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\65-nonlatin.conf" SelfReg="false" Sequence="187"/>
+    <ROW File="ntpath.pyc" Component_="atexit.pyc" FileName="ntpath.pyc" Attributes="0" SourcePath="dist\py2exe\ntpath.pyc" SelfReg="false" Sequence="295"/>
+    <ROW File="nturl2path.pyc" Component_="atexit.pyc" FileName="nturl2~1.pyc|nturl2path.pyc" Attributes="0" SourcePath="dist\py2exe\nturl2path.pyc" SelfReg="false" Sequence="296"/>
+    <ROW File="opcode.pyc" Component_="atexit.pyc" FileName="opcode.pyc" Attributes="0" SourcePath="dist\py2exe\opcode.pyc" SelfReg="false" Sequence="297"/>
+    <ROW File="optparse.pyc" Component_="atexit.pyc" FileName="optparse.pyc" Attributes="0" SourcePath="dist\py2exe\optparse.pyc" SelfReg="false" Sequence="298"/>
+    <ROW File="os.pyc" Component_="atexit.pyc" FileName="os.pyc" Attributes="0" SourcePath="dist\py2exe\os.pyc" SelfReg="false" Sequence="299"/>
+    <ROW File="os2emxpath.pyc" Component_="atexit.pyc" FileName="os2emx~1.pyc|os2emxpath.pyc" Attributes="0" SourcePath="dist\py2exe\os2emxpath.pyc" SelfReg="false" Sequence="300"/>
+    <ROW File="palmos.pyc" Component_="aliases.pyc" FileName="palmos.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\palmos.pyc" SelfReg="false" Sequence="128"/>
+    <ROW File="panes.c" Component_="alphatest.png" FileName="panes.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\panes.c" SelfReg="false" Sequence="354"/>
+    <ROW File="pango.aliases" Component_="pango.aliases" FileName="pango~1.ali|pango.aliases" Attributes="0" SourcePath="dist\py2exe\etc\pango\pango.aliases" SelfReg="false" Sequence="197"/>
+    <ROW File="pango.modules" Component_="pango.aliases" FileName="pango~1.mod|pango.modules" Attributes="0" SourcePath="dist\py2exe\etc\pango\pango.modules" SelfReg="false" Sequence="198"/>
+    <ROW File="pango.pyc" Component_="atexit.pyc" FileName="pango.pyc" Attributes="0" SourcePath="dist\py2exe\pango.pyc" SelfReg="false" Sequence="301"/>
+    <ROW File="pango.pyd" Component_="atexit.pyc" FileName="pango.pyd" Attributes="0" SourcePath="dist\py2exe\pango.pyd" SelfReg="false" Sequence="302"/>
+    <ROW File="pango_arabic_fc.dll" Component_="pango_arabic_fc.dll" FileName="pango-~1.dll|pango-arabic-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-arabic-fc.dll" SelfReg="false" Sequence="256"/>
+    <ROW File="pango_arabic_lang.dll" Component_="pango_arabic_lang.dll" FileName="pango-~2.dll|pango-arabic-lang.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-arabic-lang.dll" SelfReg="false" Sequence="257"/>
+    <ROW File="pango_basic_fc.dll" Component_="pango_basic_fc.dll" FileName="pango-~3.dll|pango-basic-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-basic-fc.dll" SelfReg="false" Sequence="258"/>
+    <ROW File="pango_basic_win32.dll" Component_="pango_basic_win32.dll" FileName="pango-~4.dll|pango-basic-win32.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-basic-win32.dll" SelfReg="false" Sequence="259"/>
+    <ROW File="pango_hangul_fc.dll" Component_="pango_hangul_fc.dll" FileName="pango-~5.dll|pango-hangul-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-hangul-fc.dll" SelfReg="false" Sequence="260"/>
+    <ROW File="pango_hebrew_fc.dll" Component_="pango_hebrew_fc.dll" FileName="pango-~6.dll|pango-hebrew-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-hebrew-fc.dll" SelfReg="false" Sequence="261"/>
+    <ROW File="pango_indic_fc.dll" Component_="pango_indic_fc.dll" FileName="pango-~7.dll|pango-indic-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-indic-fc.dll" SelfReg="false" Sequence="262"/>
+    <ROW File="pango_indic_lang.dll" Component_="pango_indic_lang.dll" FileName="pango-~8.dll|pango-indic-lang.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-indic-lang.dll" SelfReg="false" Sequence="263"/>
+    <ROW File="pango_khmer_fc.dll" Component_="pango_khmer_fc.dll" FileName="pango-~9.dll|pango-khmer-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-khmer-fc.dll" SelfReg="false" Sequence="264"/>
+    <ROW File="pango_syriac_fc.dll" Component_="pango_syriac_fc.dll" FileName="pango~10.dll|pango-syriac-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-syriac-fc.dll" SelfReg="false" Sequence="265"/>
+    <ROW File="pango_thai_fc.dll" Component_="pango_thai_fc.dll" FileName="pango~11.dll|pango-thai-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-thai-fc.dll" SelfReg="false" Sequence="266"/>
+    <ROW File="pango_tibetan_fc.dll" Component_="pango_tibetan_fc.dll" FileName="pango~12.dll|pango-tibetan-fc.dll" Attributes="0" SourcePath="dist\py2exe\lib\pango\1.6.0\modules\pango-tibetan-fc.dll" SelfReg="false" Sequence="267"/>
+    <ROW File="pangocairo.pyc" Component_="atexit.pyc" FileName="pangoc~1.pyc|pangocairo.pyc" Attributes="0" SourcePath="dist\py2exe\pangocairo.pyc" SelfReg="false" Sequence="303"/>
+    <ROW File="pangocairo.pyd" Component_="atexit.pyc" FileName="pangoc~1.pyd|pangocairo.pyd" Attributes="0" SourcePath="dist\py2exe\pangocairo.pyd" SelfReg="false" Sequence="304"/>
+    <ROW File="parseaddr.pyc" Component_="base64mime.pyc" FileName="_parse~1.pyc|_parseaddr.pyc" Attributes="0" SourcePath="dist\py2exe\email\_parseaddr.pyc" SelfReg="false" Sequence="34"/>
+    <ROW File="parser.pyc" Component_="base64mime.pyc" FileName="parser.pyc" Attributes="0" SourcePath="dist\py2exe\email\parser.pyc" SelfReg="false" Sequence="31"/>
+    <ROW File="pdb.pyc" Component_="atexit.pyc" FileName="pdb.pyc" Attributes="0" SourcePath="dist\py2exe\pdb.pyc" SelfReg="false" Sequence="305"/>
+    <ROW File="pickers.c" Component_="alphatest.png" FileName="pickers.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\pickers.c" SelfReg="false" Sequence="355"/>
+    <ROW File="pickle.pyc" Component_="atexit.pyc" FileName="pickle.pyc" Attributes="0" SourcePath="dist\py2exe\pickle.pyc" SelfReg="false" Sequence="306"/>
+    <ROW File="pixbufs.c" Component_="alphatest.png" FileName="pixbufs.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\pixbufs.c" SelfReg="false" Sequence="356"/>
+    <ROW File="popen2.pyc" Component_="atexit.pyc" FileName="popen2.pyc" Attributes="0" SourcePath="dist\py2exe\popen2.pyc" SelfReg="false" Sequence="307"/>
+    <ROW File="posixpath.pyc" Component_="atexit.pyc" FileName="posixp~1.pyc|posixpath.pyc" Attributes="0" SourcePath="dist\py2exe\posixpath.pyc" SelfReg="false" Sequence="308"/>
+    <ROW File="pprint.pyc" Component_="atexit.pyc" FileName="pprint.pyc" Attributes="0" SourcePath="dist\py2exe\pprint.pyc" SelfReg="false" Sequence="309"/>
+    <ROW File="printing.c" Component_="alphatest.png" FileName="printing.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\printing.c" SelfReg="false" Sequence="357"/>
+    <ROW File="propertyhelper.pyc" Component_="constants.pyc" FileName="proper~1.pyc|propertyhelper.pyc" Attributes="0" SourcePath="dist\py2exe\gobject\propertyhelper.pyc" SelfReg="false" Sequence="206"/>
+    <ROW File="ptcp154.pyc" Component_="aliases.pyc" FileName="ptcp154.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\ptcp154.pyc" SelfReg="false" Sequence="129"/>
+    <ROW File="punycode.pyc" Component_="aliases.pyc" FileName="punycode.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\punycode.pyc" SelfReg="false" Sequence="130"/>
+    <ROW File="pygtk.pyc" Component_="atexit.pyc" FileName="pygtk.pyc" Attributes="0" SourcePath="dist\py2exe\pygtk.pyc" SelfReg="false" Sequence="310"/>
+    <ROW File="python25.dll" Component_="python25.dll" FileName="python25.dll" Attributes="0" SourcePath="dist\py2exe\python25.dll" SelfReg="false" Sequence="311"/>
+    <ROW File="quopri.pyc" Component_="atexit.pyc" FileName="quopri.pyc" Attributes="0" SourcePath="dist\py2exe\quopri.pyc" SelfReg="false" Sequence="312"/>
+    <ROW File="quopri_codec.pyc" Component_="aliases.pyc" FileName="quopri~1.pyc|quopri_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\quopri_codec.pyc" SelfReg="false" Sequence="131"/>
+    <ROW File="quoprimime.pyc" Component_="base64mime.pyc" FileName="quopri~1.pyc|quoprimime.pyc" Attributes="0" SourcePath="dist\py2exe\email\quoprimime.pyc" SelfReg="false" Sequence="32"/>
+    <ROW File="random.pyc" Component_="atexit.pyc" FileName="random.pyc" Attributes="0" SourcePath="dist\py2exe\random.pyc" SelfReg="false" Sequence="313"/>
+    <ROW File="raw_unicode_escape.pyc" Component_="aliases.pyc" FileName="raw_un~1.pyc|raw_unicode_escape.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\raw_unicode_escape.pyc" SelfReg="false" Sequence="132"/>
+    <ROW File="re.pyc" Component_="atexit.pyc" FileName="re.pyc" Attributes="0" SourcePath="dist\py2exe\re.pyc" SelfReg="false" Sequence="314"/>
+    <ROW File="repr.pyc" Component_="atexit.pyc" FileName="repr.pyc" Attributes="0" SourcePath="dist\py2exe\repr.pyc" SelfReg="false" Sequence="315"/>
+    <ROW File="rfc822.pyc" Component_="atexit.pyc" FileName="rfc822.pyc" Attributes="0" SourcePath="dist\py2exe\rfc822.pyc" SelfReg="false" Sequence="316"/>
+    <ROW File="rot_13.pyc" Component_="aliases.pyc" FileName="rot_13.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\rot_13.pyc" SelfReg="false" Sequence="133"/>
+    <ROW File="rotated_text.c" Component_="alphatest.png" FileName="rotate~1.c|rotated_text.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\rotated_text.c" SelfReg="false" Sequence="358"/>
+    <ROW File="sansserif.conf" Component_="autohint.conf" FileName="49-san~1.con|49-sansserif.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\49-sansserif.conf" SelfReg="false" Sequence="164"/>
+    <ROW File="sansserif.conf_1" Component_="fix_globaladvance.conf" FileName="49-san~1.con|49-sansserif.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\49-sansserif.conf" SelfReg="false" Sequence="182"/>
+    <ROW File="select.pyc" Component_="atexit.pyc" FileName="select.pyc" Attributes="0" SourcePath="dist\py2exe\select.pyc" SelfReg="false" Sequence="317"/>
+    <ROW File="select.pyd" Component_="atexit.pyc" FileName="select.pyd" Attributes="0" SourcePath="dist\py2exe\select.pyd" SelfReg="false" Sequence="318"/>
+    <ROW File="shift_jis.pyc" Component_="aliases.pyc" FileName="shift_~1.pyc|shift_jis.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\shift_jis.pyc" SelfReg="false" Sequence="134"/>
+    <ROW File="shift_jis_2004.pyc" Component_="aliases.pyc" FileName="shift_~3.pyc|shift_jis_2004.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\shift_jis_2004.pyc" SelfReg="false" Sequence="136"/>
+    <ROW File="shift_jisx0213.pyc" Component_="aliases.pyc" FileName="shift_~2.pyc|shift_jisx0213.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\shift_jisx0213.pyc" SelfReg="false" Sequence="135"/>
+    <ROW File="shlex.pyc" Component_="atexit.pyc" FileName="shlex.pyc" Attributes="0" SourcePath="dist\py2exe\shlex.pyc" SelfReg="false" Sequence="378"/>
+    <ROW File="sizegroup.c" Component_="alphatest.png" FileName="sizegr~1.c|sizegroup.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\sizegroup.c" SelfReg="false" Sequence="359"/>
+    <ROW File="socket.pyc" Component_="atexit.pyc" FileName="socket.pyc" Attributes="0" SourcePath="dist\py2exe\socket.pyc" SelfReg="false" Sequence="379"/>
+    <ROW File="socket.pyc_1" Component_="atexit.pyc" FileName="_socket.pyc" Attributes="0" SourcePath="dist\py2exe\_socket.pyc" SelfReg="false" Sequence="426"/>
+    <ROW File="socket.pyd" Component_="atexit.pyc" FileName="_socket.pyd" Attributes="0" SourcePath="dist\py2exe\_socket.pyd" SelfReg="false" Sequence="427"/>
+    <ROW File="sre.pyc" Component_="atexit.pyc" FileName="sre.pyc" Attributes="0" SourcePath="dist\py2exe\sre.pyc" SelfReg="false" Sequence="380"/>
+    <ROW File="sre_compile.pyc" Component_="atexit.pyc" FileName="sre_co~1.pyc|sre_compile.pyc" Attributes="0" SourcePath="dist\py2exe\sre_compile.pyc" SelfReg="false" Sequence="381"/>
+    <ROW File="sre_constants.pyc" Component_="atexit.pyc" FileName="sre_co~2.pyc|sre_constants.pyc" Attributes="0" SourcePath="dist\py2exe\sre_constants.pyc" SelfReg="false" Sequence="382"/>
+    <ROW File="sre_parse.pyc" Component_="atexit.pyc" FileName="sre_pa~1.pyc|sre_parse.pyc" Attributes="0" SourcePath="dist\py2exe\sre_parse.pyc" SelfReg="false" Sequence="383"/>
+    <ROW File="ssl.pyc" Component_="atexit.pyc" FileName="_ssl.pyc" Attributes="0" SourcePath="dist\py2exe\_ssl.pyc" SelfReg="false" Sequence="428"/>
+    <ROW File="ssl.pyd" Component_="atexit.pyc" FileName="_ssl.pyd" Attributes="0" SourcePath="dist\py2exe\_ssl.pyd" SelfReg="false" Sequence="429"/>
+    <ROW File="stat.pyc" Component_="atexit.pyc" FileName="stat.pyc" Attributes="0" SourcePath="dist\py2exe\stat.pyc" SelfReg="false" Sequence="384"/>
+    <ROW File="stock_browser.c" Component_="alphatest.png" FileName="stock_~1.c|stock_browser.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\stock_browser.c" SelfReg="false" Sequence="360"/>
+    <ROW File="string.pyc" Component_="atexit.pyc" FileName="string.pyc" Attributes="0" SourcePath="dist\py2exe\string.pyc" SelfReg="false" Sequence="385"/>
+    <ROW File="string_escape.pyc" Component_="aliases.pyc" FileName="string~1.pyc|string_escape.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\string_escape.pyc" SelfReg="false" Sequence="137"/>
+    <ROW File="stringprep.pyc" Component_="atexit.pyc" FileName="string~1.pyc|stringprep.pyc" Attributes="0" SourcePath="dist\py2exe\stringprep.pyc" SelfReg="false" Sequence="387"/>
+    <ROW File="strptime.pyc" Component_="atexit.pyc" FileName="_strpt~1.pyc|_strptime.pyc" Attributes="0" SourcePath="dist\py2exe\_strptime.pyc" SelfReg="false" Sequence="430"/>
+    <ROW File="struct.pyc" Component_="atexit.pyc" FileName="struct.pyc" Attributes="0" SourcePath="dist\py2exe\struct.pyc" SelfReg="false" Sequence="388"/>
+    <ROW File="sub_pixel_bgr.conf" Component_="autohint.conf" FileName="10-sub~1.con|10-sub-pixel-bgr.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-sub-pixel-bgr.conf" SelfReg="false" Sequence="153"/>
+    <ROW File="sub_pixel_rgb.conf" Component_="autohint.conf" FileName="10-sub~2.con|10-sub-pixel-rgb.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-sub-pixel-rgb.conf" SelfReg="false" Sequence="154"/>
+    <ROW File="sub_pixel_vbgr.conf" Component_="autohint.conf" FileName="10-sub~3.con|10-sub-pixel-vbgr.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-sub-pixel-vbgr.conf" SelfReg="false" Sequence="155"/>
+    <ROW File="sub_pixel_vrgb.conf" Component_="autohint.conf" FileName="10-sub~4.con|10-sub-pixel-vrgb.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-sub-pixel-vrgb.conf" SelfReg="false" Sequence="156"/>
+    <ROW File="subprocess.pyc" Component_="atexit.pyc" FileName="subpro~1.pyc|subprocess.pyc" Attributes="0" SourcePath="dist\py2exe\subprocess.pyc" SelfReg="false" Sequence="389"/>
+    <ROW File="svg_loader.dll" Component_="svg_loader.dll" FileName="svg_lo~1.dll|svg_loader.dll" Attributes="0" SourcePath="dist\py2exe\lib\gtk-2.0\2.10.0\loaders\svg_loader.dll" SelfReg="false" Sequence="253"/>
+    <ROW File="synthetic.conf" Component_="autohint.conf" FileName="90-syn~1.con|90-synthetic.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\90-synthetic.conf" SelfReg="false" Sequence="174"/>
+    <ROW File="synthetic.conf_1" Component_="fix_globaladvance.conf" FileName="90-syn~1.con|90-synthetic.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\90-synthetic.conf" SelfReg="false" Sequence="190"/>
+    <ROW File="tempfile.pyc" Component_="atexit.pyc" FileName="tempfile.pyc" Attributes="0" SourcePath="dist\py2exe\tempfile.pyc" SelfReg="false" Sequence="390"/>
+    <ROW File="textscroll.c" Component_="alphatest.png" FileName="textsc~1.c|textscroll.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\textscroll.c" SelfReg="false" Sequence="361"/>
+    <ROW File="textview.c" Component_="alphatest.png" FileName="textview.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\textview.c" SelfReg="false" Sequence="362"/>
+    <ROW File="textwrap.pyc" Component_="atexit.pyc" FileName="textwrap.pyc" Attributes="0" SourcePath="dist\py2exe\textwrap.pyc" SelfReg="false" Sequence="391"/>
+    <ROW File="threading.pyc" Component_="atexit.pyc" FileName="thread~1.pyc|threading.pyc" Attributes="0" SourcePath="dist\py2exe\threading.pyc" SelfReg="false" Sequence="392"/>
+    <ROW File="threading_local.pyc" Component_="atexit.pyc" FileName="_threa~1.pyc|_threading_local.pyc" Attributes="0" SourcePath="dist\py2exe\_threading_local.pyc" SelfReg="false" Sequence="431"/>
+    <ROW File="tis_620.pyc" Component_="aliases.pyc" FileName="tis_620.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\tis_620.pyc" SelfReg="false" Sequence="138"/>
+    <ROW File="token.pyc" Component_="atexit.pyc" FileName="token.pyc" Attributes="0" SourcePath="dist\py2exe\token.pyc" SelfReg="false" Sequence="393"/>
+    <ROW File="tokenize.pyc" Component_="atexit.pyc" FileName="tokenize.pyc" Attributes="0" SourcePath="dist\py2exe\tokenize.pyc" SelfReg="false" Sequence="394"/>
+    <ROW File="traceback.pyc" Component_="atexit.pyc" FileName="traceb~1.pyc|traceback.pyc" Attributes="0" SourcePath="dist\py2exe\traceback.pyc" SelfReg="false" Sequence="395"/>
+    <ROW File="tree_store.c" Component_="alphatest.png" FileName="tree_s~1.c|tree_store.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\tree_store.c" SelfReg="false" Sequence="363"/>
+    <ROW File="types.pyc" Component_="atexit.pyc" FileName="types.pyc" Attributes="0" SourcePath="dist\py2exe\types.pyc" SelfReg="false" Sequence="396"/>
+    <ROW File="ui_manager.c" Component_="alphatest.png" FileName="ui_man~1.c|ui_manager.c" Attributes="0" SourcePath="dist\py2exe\share\gtk-2.0\demo\ui_manager.c" SelfReg="false" Sequence="364"/>
+    <ROW File="undefined.pyc" Component_="aliases.pyc" FileName="undefi~1.pyc|undefined.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\undefined.pyc" SelfReg="false" Sequence="139"/>
+    <ROW File="unhint_small_vera.conf" Component_="autohint.conf" FileName="20-unh~1.con|20-unhint-small-vera.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\20-unhint-small-vera.conf" SelfReg="false" Sequence="160"/>
+    <ROW File="unhint_small_vera.conf_1" Component_="fix_globaladvance.conf" FileName="20-unh~1.con|20-unhint-small-vera.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\20-unhint-small-vera.conf" SelfReg="false" Sequence="178"/>
+    <ROW File="unhinted.conf" Component_="autohint.conf" FileName="10-unh~1.con|10-unhinted.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\10-unhinted.conf" SelfReg="false" Sequence="157"/>
+    <ROW File="unicode_escape.pyc" Component_="aliases.pyc" FileName="unicod~1.pyc|unicode_escape.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\unicode_escape.pyc" SelfReg="false" Sequence="140"/>
+    <ROW File="unicode_internal.pyc" Component_="aliases.pyc" FileName="unicod~2.pyc|unicode_internal.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\unicode_internal.pyc" SelfReg="false" Sequence="141"/>
+    <ROW File="unicodedata.pyc" Component_="atexit.pyc" FileName="unicod~1.pyc|unicodedata.pyc" Attributes="0" SourcePath="dist\py2exe\unicodedata.pyc" SelfReg="false" Sequence="397"/>
+    <ROW File="unicodedata.pyd" Component_="atexit.pyc" FileName="unicod~1.pyd|unicodedata.pyd" Attributes="0" SourcePath="dist\py2exe\unicodedata.pyd" SelfReg="false" Sequence="398"/>
+    <ROW File="unifont.conf" Component_="autohint.conf" FileName="69-uni~1.con|69-unifont.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\69-unifont.conf" SelfReg="false" Sequence="170"/>
+    <ROW File="unifont.conf_1" Component_="fix_globaladvance.conf" FileName="69-uni~1.con|69-unifont.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\69-unifont.conf" SelfReg="false" Sequence="188"/>
+    <ROW File="unittest.pyc" Component_="atexit.pyc" FileName="unittest.pyc" Attributes="0" SourcePath="dist\py2exe\unittest.pyc" SelfReg="false" Sequence="399"/>
+    <ROW File="urllib.pyc" Component_="atexit.pyc" FileName="urllib.pyc" Attributes="0" SourcePath="dist\py2exe\urllib.pyc" SelfReg="false" Sequence="400"/>
+    <ROW File="urllib2.pyc" Component_="atexit.pyc" FileName="urllib2.pyc" Attributes="0" SourcePath="dist\py2exe\urllib2.pyc" SelfReg="false" Sequence="401"/>
+    <ROW File="urlparse.pyc" Component_="atexit.pyc" FileName="urlparse.pyc" Attributes="0" SourcePath="dist\py2exe\urlparse.pyc" SelfReg="false" Sequence="402"/>
+    <ROW File="urw_aliases.conf" Component_="autohint.conf" FileName="30-urw~1.con|30-urw-aliases.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\30-urw-aliases.conf" SelfReg="false" Sequence="162"/>
+    <ROW File="urw_aliases.conf_1" Component_="fix_globaladvance.conf" FileName="30-urw~1.con|30-urw-aliases.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\30-urw-aliases.conf" SelfReg="false" Sequence="180"/>
+    <ROW File="user.conf" Component_="autohint.conf" FileName="50-use~1.con|50-user.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\50-user.conf" SelfReg="false" Sequence="165"/>
+    <ROW File="user.conf_1" Component_="fix_globaladvance.conf" FileName="50-use~1.con|50-user.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.d\50-user.conf" SelfReg="false" Sequence="183"/>
+    <ROW File="user.pyc" Component_="atexit.pyc" FileName="user.pyc" Attributes="0" SourcePath="dist\py2exe\user.pyc" SelfReg="false" Sequence="403"/>
+    <ROW File="utf_16.pyc" Component_="aliases.pyc" FileName="utf_16.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_16.pyc" SelfReg="false" Sequence="142"/>
+    <ROW File="utf_16_be.pyc" Component_="aliases.pyc" FileName="utf_16~1.pyc|utf_16_be.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_16_be.pyc" SelfReg="false" Sequence="143"/>
+    <ROW File="utf_16_le.pyc" Component_="aliases.pyc" FileName="utf_16~2.pyc|utf_16_le.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_16_le.pyc" SelfReg="false" Sequence="144"/>
+    <ROW File="utf_7.pyc" Component_="aliases.pyc" FileName="utf_7.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_7.pyc" SelfReg="false" Sequence="145"/>
+    <ROW File="utf_8.pyc" Component_="aliases.pyc" FileName="utf_8.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_8.pyc" SelfReg="false" Sequence="146"/>
+    <ROW File="utf_8_sig.pyc" Component_="aliases.pyc" FileName="utf_8_~1.pyc|utf_8_sig.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\utf_8_sig.pyc" SelfReg="false" Sequence="147"/>
+    <ROW File="utils.pyc" Component_="base64mime.pyc" FileName="utils.pyc" Attributes="0" SourcePath="dist\py2exe\email\utils.pyc" SelfReg="false" Sequence="33"/>
+    <ROW File="uu.pyc" Component_="atexit.pyc" FileName="uu.pyc" Attributes="0" SourcePath="dist\py2exe\uu.pyc" SelfReg="false" Sequence="405"/>
+    <ROW File="uu_codec.pyc" Component_="aliases.pyc" FileName="uu_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\uu_codec.pyc" SelfReg="false" Sequence="148"/>
+    <ROW File="w9xpopen.exe" Component_="w9xpopen.exe" FileName="w9xpopen.exe" Attributes="0" SourcePath="dist\py2exe\w9xpopen.exe" SelfReg="false" Sequence="406"/>
+    <ROW File="warnings.pyc" Component_="atexit.pyc" FileName="warnings.pyc" Attributes="0" SourcePath="dist\py2exe\warnings.pyc" SelfReg="false" Sequence="407"/>
+    <ROW File="webbrowser.pyc" Component_="atexit.pyc" FileName="webbro~1.pyc|webbrowser.pyc" Attributes="0" SourcePath="dist\py2exe\webbrowser.pyc" SelfReg="false" Sequence="408"/>
+    <ROW File="yes_bitmaps.conf" Component_="autohint.conf" FileName="70-yes~1.con|70-yes-bitmaps.conf" Attributes="0" SourcePath="dist\py2exe\etc\fonts\conf.avail\70-yes-bitmaps.conf" SelfReg="false" Sequence="172"/>
+    <ROW File="zenoss.ico" Component_="zenoss_blue.ico" FileName="zenoss.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss.ico" SelfReg="false" Sequence="417"/>
+    <ROW File="zenoss_blue.ico" Component_="zenoss_blue.ico" FileName="zenoss~1.ico|zenoss-blue.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-blue.ico" SelfReg="false" Sequence="411"/>
+    <ROW File="zenoss_err.ico" Component_="zenoss_blue.ico" FileName="zenoss~2.ico|zenoss-err.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-err.ico" SelfReg="false" Sequence="412"/>
+    <ROW File="zenoss_green.ico" Component_="zenoss_blue.ico" FileName="zenoss~3.ico|zenoss-green.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-green.ico" SelfReg="false" Sequence="413"/>
+    <ROW File="zenoss_orange.ico" Component_="zenoss_blue.ico" FileName="zenoss~4.ico|zenoss-orange.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-orange.ico" SelfReg="false" Sequence="414"/>
+    <ROW File="zenoss_red.ico" Component_="zenoss_blue.ico" FileName="zenoss~5.ico|zenoss-red.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-red.ico" SelfReg="false" Sequence="415"/>
+    <ROW File="zenoss_yellow.ico" Component_="zenoss_blue.ico" FileName="zenoss~6.ico|zenoss-yellow.ico" Attributes="0" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss-yellow.ico" SelfReg="false" Sequence="416"/>
+    <ROW File="zentray.exe" Component_="zentray.exe" FileName="zentray.exe" Attributes="0" SourcePath="dist\py2exe\zentray.exe" SelfReg="false" Sequence="409"/>
+    <ROW File="zentrayicon.glade" Component_="config.pyc" FileName="zentra~1.gla|zentrayicon.glade" Attributes="0" SourcePath="dist\py2exe\zentrayicon\zentrayicon.glade" SelfReg="false" Sequence="418"/>
+    <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Attributes="0" SourcePath="dist\py2exe\zlib1.dll" SelfReg="false" Sequence="421"/>
+    <ROW File="zlib_codec.pyc" Component_="aliases.pyc" FileName="zlib_c~1.pyc|zlib_codec.pyc" Attributes="0" SourcePath="dist\py2exe\encodings\zlib_codec.pyc" SelfReg="false" Sequence="149"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_FRAGS&gt;FolderDlg.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_FRAGS&gt;UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;AI_RES&gt;default-banner.bmp"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;AI_RES&gt;default-dialog.bmp"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder][ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="controlPanelIcon.exe" SourcePath="dist\py2exe\zentrayicon\pixmaps\zenoss.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsFamily9X]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ZenTray" Directory_="StartupFolder" Name="ZenTray" Component_="zentray.exe" Target="[#zentray.exe]" Description="Systray status monitor for Zenoss" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="zentray.exe" Directory_="SHORTCUTDIR" Name="ZenTray" Component_="zentray.exe" Target="[#zentray.exe]" Description="Systray status monitor for Zenoss" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
