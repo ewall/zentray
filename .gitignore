@@ -1,2 +1,4 @@
 build/*
 dist/*
+ZenTray_Windows_Setup-cache/*
+ZenTray_Windows_Setup.msi

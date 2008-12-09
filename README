@@ -15,7 +15,11 @@ Description:
 
 	New in version 0.2: The program will authenticate to the Zenoss (Zope) server using a form and cookies, which is the default login method.
 
-Platform:
-	Windows, and more?
+Requires:
+	Python 2.5+
+	GTK+ Runtime 2.12.9+
 
-	I have only tested on Windows XP Pro SP3, but since this is created with PyGTK, it is probably compatible with other systems. YMMV.
+Platform:
+	Windows (portable excutable can be created with py2exe)
+
+	I have only tested on Windows XP Pro SP3, but since this is created with Pyton and GTK+, it is probably compatible with other systems. YMMV.
