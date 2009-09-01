@@ -23,3 +23,19 @@ Platform:
 	Windows (portable excutable can be created with py2exe)
 
 	I have only tested on Windows XP Pro SP3, but since this is created with Pyton and GTK+, it is probably compatible with other systems. YMMV.
+
+Downloads:
+
+	Source Code:
+	http://github.com/ewall/zentray
+
+	Latest version, Windows Installer:
+	http://www.ewall.org/dl/ZenTray_Windows_Setup.msi
+
+	Latest version, Windows EXE Zipped Folder:
+	http://www.ewall.org/dl/ZenTray_Windows_folder.zip
+
+Recommended Alternatives:
+
+	ZApplet is a similar Open Source project, originally created by Zenoss employees with Python and GTK+
+	http://sourceforge.net/projects/zapplet/
